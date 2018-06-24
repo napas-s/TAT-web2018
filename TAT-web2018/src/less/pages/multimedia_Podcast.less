@@ -1,0 +1,161 @@
+.block-content{
+    .body-content{
+        .block-search{
+            .show-or-hide{
+                #hide{
+                    display: none;
+                    @media only screen and (min-width: @screen-sm){display: block}
+                    @media only screen and (min-width: @screen-md){display: block}
+                    @media only screen and (min-width: @screen-lg){display: block}
+                    @media only screen and (min-width: @screen-xl){display: block}
+                }
+                &:hover{
+                    #hide{
+                        display: block;
+                        @media only screen and (min-width: @screen-sm){display: block}
+                        @media only screen and (min-width: @screen-md){display: block}
+                        @media only screen and (min-width: @screen-lg){display: block}
+                        @media only screen and (min-width: @screen-xl){display: block}
+                    }
+                }
+            }
+        }
+        .block-tab{
+            margin-top: 5%;
+            .tab-podcast{
+                .tab-button-outer{
+                    display: none;
+                    @media only screen and (min-width: @screen-sm){display: block;}
+                    @media only screen and (min-width: @screen-md){display: block;}
+                    @media only screen and (min-width: @screen-lg){display: block;}
+                    @media only screen and (min-width: @screen-xl){display: block;}
+                }
+                .tab-select-outer{
+                    display: block;
+                    @media only screen and (min-width: @screen-sm){display: none;}
+                    @media only screen and (min-width: @screen-md){display: none;}
+                    @media only screen and (min-width: @screen-lg){display: none;}
+                    @media only screen and (min-width: @screen-xl){display: none;}
+                    select{height: 40px;}
+                }
+            }
+            .bg-tab{
+                .tab-body-podcast{
+                    .tab-content-podcast{
+                        .grid-container{
+                           display: grid;
+                           grid-template-columns: auto;
+                           grid-gap: 30px 30px;
+                           @media only screen and (min-width: @screen-sm){grid-template-columns: 50% 50%; grid-gap: 10px 10px;}
+                           @media only screen and (min-width: @screen-md){grid-template-columns: 50% 50%; grid-gap: 10px 10px;}
+                           @media only screen and (min-width: @screen-lg){grid-template-columns: 50% 50%; grid-gap: 20px 20px;}
+                           @media only screen and (min-width: @screen-xl){grid-template-columns: 50% 50%; grid-gap: 30px 30px;}
+                            .grid-item {
+                                background-color: white;
+                                border: solid 1px @desert;
+                                .card-podcast{
+                                    position: relative;
+                                    .podcast-box{
+                                        display: grid;
+                                        grid-template-columns: 40% 60%;
+                                        .card-img{
+                                            height: 107px;
+                                            @media only screen and (min-width: @screen-xs){height: 110px;}
+                                            @media only screen and (min-width: @screen-sm){height: 80px;}
+                                            @media only screen and (min-width: 530px)     {height: 120px;}
+                                            @media only screen and (min-width: 580px)     {height: 90px;}
+                                            @media only screen and (min-width: 610px)     {height: 98px;}
+                                            @media only screen and (min-width: @screen-md){height: 120px;}
+                                            @media only screen and (min-width: @screen-lg){height: unset;}
+                                            @media only screen and (min-width: @screen-xl){height: unset;}
+                                        }
+                                        .card-body{
+                                            padding-top: 5px;
+                                            padding-left: 10px;
+                                            padding-right: 10px;
+                                            margin-bottom: 30px;
+                                            @media only screen and (min-width: 363px)     {margin-bottom: 56px;}
+                                            @media only screen and (min-width: @screen-xs){margin-bottom: 60px;}
+                                            @media only screen and (min-width: @screen-sm){margin-bottom: 12px;}
+                                            @media only screen and (min-width: 530px)     {margin-bottom: 70px;}
+                                            @media only screen and (min-width: 580px)     {margin-bottom: 30px;}
+                                            @media only screen and (min-width: 610px)     {margin-bottom: 32px;}
+                                            @media only screen and (min-width: 745px)     {margin-bottom: 56px;}
+                                            @media only screen and (min-width: @screen-md){margin-bottom: 40px;}
+                                            @media only screen and (min-width: 847px)     {margin-bottom: 70px;}
+                                            @media only screen and (min-width: @screen-lg){margin-bottom: unset;}
+                                            @media only screen and (min-width: @screen-xl){margin-bottom: unset;}
+                                            .card-title{
+                                                position: relative;
+                                                .left{
+                                                    display: block;
+                                                    width: 90%;
+                                                    @media only screen and (min-width: @screen-sm){width: 96%;}
+                                                    @media only screen and (min-width: 708px)     {width: 90%;}
+                                                    @media only screen and (min-width: 1679px)    {width: 80%;}
+                                                    @media only screen and (min-width: 1800px)    {width: 60%;}
+                                                    h2{
+                                                        font-size: 14px;
+                                                        @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+                                                        @media only screen and (min-width: @screen-sm) {font-size: 14px;}
+                                                        @media only screen and (min-width: @screen-md) {font-size: 16px;}
+                                                        @media only screen and (min-width: @screen-lg) {font-size: 18px;}
+                                                        @media only screen and (min-width: @screen-xl) {font-size: 20px;}
+                                                    }
+                                                }
+                                                .right{
+                                                   
+                                                    .keyboard_arrow_right()
+                                                }
+                                            }
+                                            .card-body {
+                                                padding: 0;
+                                                margin-top: 0;
+                                                margin-left: 0;
+                                                margin-right: 0;
+                                                margin-bottom: 0;
+                                                @media only screen and (min-width: @screen-sm) {margin-top: -10px;}
+                                                @media only screen and (min-width: 1500px) {margin-top: 0px;}
+                                                p{
+                                                    color: @very-dark-gray;  
+                                                    font-size: 12px;
+                                                    @media only screen and (min-width: @screen-xs) {font-size: 12px;}
+                                                    @media only screen and (min-width: @screen-sm) {font-size: 12px;}
+                                                    @media only screen and (min-width: @screen-md) {font-size: 14px;}
+                                                    @media only screen and (min-width: @screen-lg) {font-size: 16px;}
+                                                    @media only screen and (min-width: @screen-xl) {font-size: 16px;}
+                                                }
+                                            }
+                                        }
+                                        .card-footers{
+                                            
+                                            .block-button{
+                                                display: grid;
+                                                grid-template-columns: auto auto;
+                                                grid-gap: 10px 20px;
+                                                position: absolute;
+                                                left: 30px;
+                                                right: 30px;
+                                                bottom: 20px;
+                                                @media only screen and (min-width: @screen-sm){grid-gap: 10px 10px;}
+                                                @media only screen and (min-width: @screen-md){grid-gap: 10px 10px;}
+                                                @media only screen and (min-width: @screen-lg){
+                                                    position: relative;
+                                                    left: 0px;
+                                                    right: 0px;
+                                                    bottom: unset;
+                                                }
+                                                @media only screen and (min-width: @screen-xl){position: relative;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bg-jumbotron
+            }
+        }
+    }
+}

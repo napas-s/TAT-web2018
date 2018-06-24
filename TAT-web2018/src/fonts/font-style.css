@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "TATSANA CHON-REG";
+  src: url("../fonts/TATSANA CHON/TATSANA CHON-REG.TTF");
+  src: url('../fonts/gen/TATSanaChon-Regular.eot');
+  src: url('../fonts/gen/TATSanaChon-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/gen/TATSanaChon-Regular.woff2') format('woff2'),
+      url('../fonts/gen/TATSanaChon-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TATSANA CHON-BLD";
+  src: url("../fonts/TATSANA CHON/TATSANA CHON-BLD.TTF");
+  src: url('../fonts/gen/TATSanaChon-Bold.eot');
+  src: url('../fonts/gen/TATSanaChon-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/gen/TATSanaChon-Bold.woff2') format('woff2'),
+      url('../fonts/gen/TATSanaChon-Bold.woff') format('woff');
+}

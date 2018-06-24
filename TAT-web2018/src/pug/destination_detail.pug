@@ -1,0 +1,817 @@
+doctype html
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Bootstrap CSS
+    link(rel="stylesheet" href="../src/assets/vendor/bootstrap-4.1.0-dist/css/bootstrap.min.css")
+    //css
+    link(rel="stylesheet", href="../src/css/styles.css")
+    title Destination_detail
+  body
+    // navigate bar
+    include _components/nav.pug
+    // banner
+    section.block-banner
+      img.abt_HeroBanner(src="../src/images/banner/banner-noImg.jpg")
+      // Vector
+      .block-vector
+        img.Banner_cos_left(src="../src/images/vectors/banner-cos-left.png")
+        img.Banner_cos_right(src="../src/images/vectors/banner-cos-right.png")
+        
+    // content
+    article.block-content
+      .head-content
+          .head-sub destination
+          .head-title chiang mai
+          .head-body.more-des
+            | Chiang Mai Province is in Northern Thailand. The Chiang Mai weather is always cooler than the rest of the country, with a mean temperature of 25°C throughout the year. The city has plethora of things to see and things to do. The beauty of the mountains, hill tribe villages, and botanical gardens attracts millions of tourists to Chiang Mai every year. You can also enjoy a zoo and aquarium, a nocturnal zoo, and classic Northern Thai temples and architecture which are a fusion of Lanna, Mon, and Burmese styles.
+            p
+            | The north of Chiang Mai borders the Shan state of Myanmar. Cross-border trade is allowed at Kew Pha Wok checkpoint in Amphoe Chiang Dao and Ban Lak Taeng checkpoint in Amphoe Wiang Haeng, so both are tourist sites and places for cultural exchanges between two nations. 
+            p
+            | The south is next to Amphoe Sam Ngao, Amphoe Mae Ramad, and Amphoe Tha Song Yang of Tak Province, with tourist attractions like Bhumibol Dam, Sam Ngao Cliff, Mae Kasa Waterfall, and Thee Mo Bo Waterfall.
+            p
+            | The east is next to Amphoe Mae Fah Luang, Amphoe Mueang Chiang Rai, Amphoe Mae Suai, and Amphoe Wiang Pa Pao of Chiang Rai Province, Amphoe Mueang Pan and Amphoe Mueang Lampang of Lampang Province, and Amphoe Ban Thi, Amphoe Mueang Lamphun, Amphoe Pa Sang, Amphoe Wiang Nong Long, Amphoe Ban Hong, and Amphoe Li of Lamphun Province.
+            p
+            | The west is next to Amphoe Pai, Amphoe Mueang Mae Hong Son, Amphoe Khun Yuam, Amphoe Mae La Noi, Amphoe Mae Sariang, and Amphoe Sob Moei of Mae Hong Son Province. Most popular places are Amphoe Pai, Pang Oung, and Doi Mae U-kho.
+            p
+            | Chiang Mai has a long history. It was once the capital of the Lanna Kingdom. Nowadays it is a very modern city, similar to Bangkok.
+      .body-content
+        .block-01-des
+          img.Vector-Smart-Object-left(src="../src/images/vectors/Vector-Smart-Object-left.png")
+          img.Vector-Smart-Object-right(src="../src/images/vectors/Vector-Smart-Object-right.png")
+          .containers
+            .block-des
+                .box-tag 
+                  .temp-tag
+                    .style-head-tag
+                      h2 Tags
+                    .row.style-body
+                        .col-auto Where to go
+                        .col-auto Temple
+                        .col-auto Royal Palace
+                        .col-auto Historical
+                        .col-auto Nothen
+                        .col-auto Lanna
+                        .col-auto Bo Sang
+                        .col-auto Handcraft
+                        .col-auto Nimmanhaemin
+                        .col-auto Night Bazaar
+                        .col-auto Tribe
+
+                .box-tab
+                  .tab-tag
+                    .tab-button-outer
+                      ul.nav.nav-tabs#tab-button-tag
+                        li.nav-item
+                          a.nav-link.active(data-toggle='tab', href='#tab01') INTERACTIVE MAP
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#tab02') TRIP ADVISOR
+                    .tab-select-outer
+                      select#tab-select-tag
+                        option(value='#tab01') INTERACTIVE MAP
+                        option(value='#tab02') TRIP ADVISOR
+                  .tab-body-tag
+                    #tab01.tab-content-tag.active
+                      img.map(src="../src/images/img/map-des.jpg")
+                    #tab02.tab-content-tag
+                      img.map(src="../src/images/img/map-des-03.jpg")
+        .block-wave
+          .grey_wave_top
+          .bg-wave
+            .block-02-des
+              .containers
+                .style-head how to go
+                .tab-how-to-go
+                  .tab-button-outer
+                      ul.nav.nav-tabs#tab-button-how-to-go
+                        li.nav-item
+                          a.nav-link.active(data-toggle='tab', href='#tabbus') 
+                            i.fa.fa-bus
+                            | by bus
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#tabtrain') 
+                            i.fa.fa-train
+                            | by train
+                        li.nav-item
+                          a.nav-link(data-toggle='tab', href='#tabair') 
+                            i.fa.fa-fighter-jet
+                            | by air
+                  .tab-select-outer
+                    
+                    select.selectpicker#tab-select-how-to-go
+                      option(value='#tabbus') &#xf207; &nbsp; &nbsp;
+                        | by bus 
+                      option(value='#tabtrain') &#xf238; &nbsp; &nbsp;
+                        | by train
+                      option(value='#tabair') &#xf0fb; &nbsp; &nbsp;
+                        | by air
+
+                  .tab-body-how-to-go
+                    #tabbus.tab-content-how-to-go.active
+                      p
+                      | From Bangkok there are ordinary, 2nd class, and 1st class air-conditioned busses leaving throughout the day from Bangkok's Northern Bus Terminal (Mo Chit 2) for Chiang Mai (8.00 a.m. to 09.00 p.m.) Call 02 936 3600, 02 936 2852, and 02 937 8055 for an updated bus timetable.
+                      p
+                      | Private buses, which can be conveniently booked in tourist centers in Bangkok, are also available. However, the public busses from the Northern Bus Terminal are generally more reliable. The journey takes approximately 10-12 hours, depending on traffic.
+                      p
+                      | From other provinces, including Mae Sai, Chiang Saen, Chiang Rai, Nan, Phayao, Phrae, Lampang, Lamphun, Phitsanulok, Sukhothai, Mae Hong Son, Mae Sot, Mae Sariang, Khon Kaen, Nakhon Ratchasima (Khorat), and Udon Thani, there are direct busses that service the Chiang Mai Arcade Bus Station. Contact tel: 0 5324 2664 for an updated bus timetable.
+                    #tabtrain.tab-content-how-to-go
+                      p
+                      | by train.
+                      p
+                      | Private buses, which can be conveniently booked in tourist centers in Bangkok, are also available. However, the public busses from the Northern Bus Terminal are generally more reliable. The journey takes approximately 10-12 hours, depending on traffic.
+                      p
+                      | From other provinces, including Mae Sai, Chiang Saen, Chiang Rai, Nan, Phayao, Phrae, Lampang, Lamphun, Phitsanulok, Sukhothai, Mae Hong Son, Mae Sot, Mae Sariang, Khon Kaen, Nakhon Ratchasima (Khorat), and Udon Thani, there are direct busses that service the Chiang Mai Arcade Bus Station. Contact tel: 0 5324 2664 for an updated bus timetable.
+                    #tabair.tab-content-how-to-go
+                      p
+                      | by air.
+                      p
+                      | Private buses, which can be conveniently booked in tourist centers in Bangkok, are also available. However, the public busses from the Northern Bus Terminal are generally more reliable. The journey takes approximately 10-12 hours, depending on traffic.
+                      p
+                      | From other provinces, including Mae Sai, Chiang Saen, Chiang Rai, Nan, Phayao, Phrae, Lampang, Lamphun, Phitsanulok, Sukhothai, Mae Hong Son, Mae Sot, Mae Sariang, Khon Kaen, Nakhon Ratchasima (Khorat), and Udon Thani, there are direct busses that service the Chiang Mai Arcade Bus Station. Contact tel: 0 5324 2664 for an updated bus timetable.
+          .blue_wave
+          .grey_wave_bottom 
+        .block-03-des
+          .containers
+            .style-head recommend
+            .box-recommend
+              .grid-container
+                .grid-item
+                  .card
+                    img.card-img-top(src="../src/images/destination_detail/01.jpg")
+                    .card-body
+                      .card-title
+                        .row
+                          .col-9.left 
+                            h2 The Grand Palace
+                          .col-3.right
+                            i.fa.fa-angle-right
+                      .card-text
+                        .row
+                          .col-12.col-md-2.col-lg-2.col-xl-2.left
+                            img.location_ic(src="../src/images/vectors/location-ic.jpg")
+                          .col-12.col-md-10.col-lg-10.col-xl-10.right
+                            p Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                      .card-footer
+                        .row
+                          .col-auto Where to go
+                          .col-auto Temple
+                          .col-auto Royal Palace
+                          .col-auto Historical
+                .grid-item
+                  .card
+                    img.card-img-top(src="../src/images/destination_detail/02.jpg")
+                    .card-body
+                      .card-title
+                        .row
+                          .col-9.left 
+                            h2 Wat Pho
+                          .col-3.right
+                            i.fa.fa-angle-right
+                      .card-text
+                        .row
+                          .col-12.col-md-2.col-lg-2.col-xl-2.left
+                            img.location_ic(src="../src/images/vectors/location-ic.jpg")
+                          .col-12.col-md-10.col-lg-10.col-xl-10.right
+                            p Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                      .card-footer
+                        .row
+                          .col-auto Temple
+                .grid-item
+                  .card
+                    img.card-img-top(src="../src/images/destination_detail/03.jpg")
+                    .card-head
+                    .card-body
+                      .card-title
+                        .row
+                          .col-9.left 
+                            h2 China Town
+                          .col-3.right
+                            i.fa.fa-angle-right
+                      .card-text
+                        .row
+                          .col-12.col-md-2.col-lg-2.col-xl-2.left
+                            img.location_ic(src="../src/images/vectors/location-ic.jpg")
+                          .col-12.col-md-10.col-lg-10.col-xl-10.right
+                            p Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                      .card-footer
+                        .row
+                          .col-auto Night Market
+                          .col-auto Village
+                          .col-auto Community
+                .grid-item
+                  .card
+                    img.card-img-top(src="../src/images/destination_detail/04.jpg")
+                    .card-body
+                      .card-title
+                        .row
+                          .col-9.left 
+                            h2 Jim Thompson House
+                          .col-3.right
+                            i.fa.fa-angle-right
+                      .card-text
+                        .row
+                          .col-12.col-md-2.col-lg-2.col-xl-2.left
+                            img.location_ic(src="../src/images/vectors/location-ic.jpg")
+                          .col-12.col-md-10.col-lg-10.col-xl-10.right
+                            p Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                      .card-footer
+                        .row
+                          .col-auto Night Market
+                          .col-auto Village
+                          .col-auto Community
+              .style-view view more Attractions
+        .block-04-des
+          .block-drop-img
+            .grid-container.block-drop-img-des
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img1
+                        img.icon-01(src="../src/images/vectors/icon/ico-insight-insight.png") 
+                        img.icon-01-select(src="../src/images/vectors/icon/ico-insight-insight-s.png") 
+                        span Insight
+                      .actions
+                #myDIV1.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/05.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/05.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 12-15 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Supanburi
+                              p Supanburi
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/05.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 13-15 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Khao Chae Road
+                              p Pathumthani
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/05.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 13-15 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Old Town
+                              p Ayutthaya
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img2 
+                        img.icon-02(src="../src/images/vectors/icon/ico-insight-info.png") 
+                        img.icon-02-select(src="../src/images/vectors/icon/ico-insight-info-s.png") 
+                        span General Info.
+                      .actions
+                #myDIV2.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img3 
+                        img.icon-03(src="../src/images/vectors/icon/ico-insight-transport.png")
+                        img.icon-03-select(src="../src/images/vectors/icon/ico-insight-transport-s.png")
+                        span Transportation
+                      .actions
+                #myDIV3.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img4 
+                        img.icon-04(src="../src/images/vectors/icon/ico-insight-accom.png")
+                        img.icon-04-select(src="../src/images/vectors/icon/ico-insight-accom-s.png")
+                        span Accommodation
+                      .actions
+                #myDIV4.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img5 
+                        img.icon-05(src="../src/images/vectors/icon/ico-insight-attrac.png")
+                        img.icon-05-select(src="../src/images/vectors/icon/ico-insight-attrac-s.png")
+                        span  Where to Go
+                      .actions
+                #myDIV5.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/05.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img6
+                        img.icon-06(src="../src/images/vectors/icon/ico-insight-event.png")
+                        img.icon-06-select(src="../src/images/vectors/icon/ico-insight-event-s.png")
+                        span  Things to Do
+                      .actions
+                #myDIV6.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/08.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img7
+                        img.icon-07(src="../src/images/vectors/icon/ico-insight-food.png")
+                        img.icon-07-select(src="../src/images/vectors/icon/ico-insight-food-s.png")
+                        span Food & Drink
+                      .actions
+                #myDIV7.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/07.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+              .grid-item
+                .select-item
+                    figure
+                      .select-icon.img8
+                        img.icon-08(src="../src/images/vectors/icon/ico-insight-shopping.png")
+                        img.icon-08-select(src="../src/images/vectors/icon/ico-insight-shopping-s.png")
+                        span Shopping
+                      .actions
+                #myDIV8.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail-item
+                      .grid-container
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                        .block-item
+                          .block-item-head
+                            img(src="../src/images/destination_detail/06.jpg") 
+                          .block-item-body
+                            .item-title
+                              .left 21-23 April
+                              .right 
+                                i.material-icons keyboard_arrow_right
+                            .item-body
+                              h2 Songkran Phrapadang
+                              p Samutprakarn
+                      .style-view view more events 
+                              
+           
+    //footer
+    include _components/footer.pug
+
+
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/jquery-3.3.1.slim.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/popper.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/bootstrap.min.js")  
+
+    // Optional JavaScript
+    script(type='text/javascript', src="../src/js/script.js")  
+
+    // Option Select Tab
+    script.
+      $(function() {
+      var $tabButtonItem = $('#tab-button-tag li'),
+        $tabSelect = $('#tab-select-tag'),
+        $tabContents = $('.tab-content-tag'),
+        activeClass = 'is-active';
+        $tabButtonItem.first().addClass(activeClass);
+        $tabContents.not(':first').hide();
+        $tabButtonItem.find('a').on('click', function(e) {
+      var target = $(this).attr('href');
+        $tabButtonItem.removeClass(activeClass);
+        $(this).parent().addClass(activeClass);
+        $tabSelect.val(target);
+        $tabContents.hide();
+        $(target).show();
+        e.preventDefault();
+        });
+      $tabSelect.on('change', function() {
+      var target = $(this).val(),
+        targetSelectNum = $(this).prop('selectedIndex');
+        $tabButtonItem.removeClass(activeClass);
+        $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+        $tabContents.hide();
+        $(target).show();
+        });
+        });
+
+    script.
+      $(function() {
+      var $tabButtonItem = $('#tab-button-how-to-go li'),
+        $tabSelect = $('#tab-select-how-to-go'),
+        $tabContents = $('.tab-content-how-to-go'),
+        activeClass = 'is-active';
+        $tabButtonItem.first().addClass(activeClass);
+        $tabContents.not(':first').hide();
+        $tabButtonItem.find('a').on('click', function(e) {
+      var target = $(this).attr('href');
+        $tabButtonItem.removeClass(activeClass);
+        $(this).parent().addClass(activeClass);
+        $tabSelect.val(target);
+        $tabContents.hide();
+        $(target).show();
+        e.preventDefault();
+        });
+      $tabSelect.on('change', function() {
+      var target = $(this).val(),
+        targetSelectNum = $(this).prop('selectedIndex');
+        $tabButtonItem.removeClass(activeClass);
+        $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+        $tabContents.hide();
+        $(target).show();
+        });
+        });
+
+    //tab select show/hide select
+    script.
+      $('div').click(function() {
+        $(this).siblings().removeClass('grid-item-select');
+        $(this).addClass('grid-item-select');
+       
+      });
+
+    
+    script.
+      $(document).ready(function(){
+        $(".img1").click(function(){
+          $("#myDIV1").toggle();
+        });
+        $(".img2").click(function(){
+          $("#myDIV2").toggle();
+        });
+        $(".img3").click(function(){
+          $("#myDIV3").toggle();
+        });
+        $(".img4").click(function(){
+          $("#myDIV4").toggle();
+        });
+        $(".img5").click(function(){
+          $("#myDIV5").toggle();
+        });
+        $(".img6").click(function(){
+          $("#myDIV6").toggle();
+        });
+        $(".img7").click(function(){
+          $("#myDIV7").toggle();
+        });
+        $(".img8").click(function(){
+          $("#myDIV8").toggle();
+        });
+        $(".img9").click(function(){
+          $("#myDIV9").toggle();
+        });
+        $(".img10").click(function(){
+          $("#myDIV10").toggle();
+        });
+      });
+
+    
+      
+
+    
+
+

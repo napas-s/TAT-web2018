@@ -1,0 +1,40 @@
+section.block-navigate
+    nav.navbar.navbar-expand-lg
+      a.navbar-brand(href="#") 
+        img.LOGO(src="../src/images/logo/logo.png" srcset="../src/images/logo/logo@2x.png 2x,../src/images/logo/logo@3x.png 3x")
+      .navbar-toggler(data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        | MENU 
+        i.fa.fa-bars
+      #navbarSupportedContent.collapse.navbar-collapse
+        a.toggler-close(data-toggle="collapse" data-target="#navbarSupportedContent") X CLOSE
+        ul.nav.header.ml-auto
+          li.nav-item
+            a.nav-link(href="#") ACCESSIBILITY | 
+                span.active ON
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              | LANGUAGE | 
+              span.active GLOBAL
+              i.fa.fa-angle-down
+                
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.active(href="#") HOME
+          li.nav-item
+            a.nav-link(href="#") See & Do
+          li.nav-item.active
+            a.nav-link(href="#") Event & Festival
+          li.nav-item
+            a.nav-link(href="#") Stay
+          li.nav-item.active
+            a.nav-link(href="#") Trip Planner
+          li.nav-item
+            a.nav-link(href="#") Traveller Essentials
+          li.nav-item
+            .beeline
+          li.nav-item
+            .nav-link
+                i.fa.fa-search
+          li.nav-item
+            center
+                button.nav-login LOGIN

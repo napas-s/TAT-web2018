@@ -1,0 +1,133 @@
+doctype html
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Bootstrap CSS
+    link(rel="stylesheet" href="../src/assets/vendor/bootstrap-4.1.0-dist/css/bootstrap.min.css")
+    //css
+    link(rel="stylesheet", href="../src/css/styles.css")
+    title AboutThailand_ThailandHoliday
+  body
+    // navigate bar
+    include _components/nav.pug
+    // banner
+    section.block-banner
+      img.abt_HeroBanner(src="../src/images/banner/abt-hero-banner.jpg" srcset="../src/images/banner/abt-hero-banner@2x.jpg 2x,../src/images/banner/abt-hero-banner@3x.jpg 3x")
+    // content
+    article.block-content
+      .head-content
+          .menu-nav
+            ul.nav
+              li.nav-item
+                a.nav-link(href="#") home 
+              li.nav-item
+                .nav-link
+                  i.fa.fa-angle-double-right
+              li.nav-item
+                a.nav-link.sub-link(href="#") ABOUT THAILAND
+              li.nav-item
+                .nav-link
+                  i.fa.fa-angle-double-right
+              li.nav-item
+                a.nav-link.active(href="#") utilities & services
+          .head-sub about thailand
+          .head-title utilities & services
+      .body-content
+        .containers
+          .tab-utilities
+            .tab-button-outer
+              ul.nav.nav-tabs#tab-button-utilities
+                li.nav-item
+                  a.nav-link.active(data-toggle='tab', href='#tabutilities') utilities
+                li.nav-item
+                  a.nav-link(data-toggle='tab', href='#tabfacilities') facilities
+                li.nav-item
+                  a.nav-link(data-toggle='tab', href='#tabtravellers') facilities for disable travellers
+            .tab-select-outer
+              select#tab-select-utilities
+                option(value='#tabutilities') utilities
+                option(value='#tabfacilities') facilities
+                option(value='#tabtravellers') facilities for disable travellers
+        .bg-tab
+          .containers
+            .tab-body-utilities
+              #tabutilities.tab-content-utilities.active
+                #accordion(role='tablist')
+                  .collapse-block
+                    #headingOne(role='tab')
+                      a.collapsed.cols-head(data-toggle='collapse', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                        | ELECTRICITY
+                    #collapseOne.collapse(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                      .cols-body
+                        | .....................................................#1
+                  .collapse-block
+                    #headingTwo(role='tab')
+                      a.collapsed.cols-head(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                        | water
+                    #collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                      .cols-body
+                        | .....................................................#2
+                  .collapse-block
+                    #headingThree(role='tab')
+                      a.collapsed.cols-head(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        | car fuel
+                    #collapseThree.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                      .cols-body
+                        | Fuel for cars in Thailand is predominately unleaded petrol, sold by the liter.  Bigger vehicles, such as vans, use diesel.  Both are readily available at petrol stations throughout the country.  Prices range from 20 to 30 baht per liter.  Most service stations accept Visa and MasterCard, and generally close by 10pm or midnight.  
+                  .collapse-block
+                    #headingfourr(role='tab')
+                      a.collapsed.cols-head(data-toggle='collapse', href='#collapsefour', aria-expanded='false', aria-controls='collapsefour')
+                        | measurements and conversions
+                    #collapsefour.collapse(role='tabpanel', aria-labelledby='headingfour', data-parent='#accordion')
+                      .cols-body
+                        | .....................................................#3
+              #tabfacilities.tab-content-utilities
+                br
+                br
+                center by train 
+              #tabtravellers.tab-content-utilities
+                br
+                br
+                center by air       
+           
+    //footer
+    include _components/footer.pug
+
+    // Optional JavaScript
+    script(type='text/javascript', src="../src/js/script.js")  
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/jquery-3.3.1.slim.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/popper.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/bootstrap.min.js")  
+    // Option Select Tab
+    script.
+      $(function() {
+      var $tabButtonItem = $('#tab-button-utilities li'),
+        $tabSelect = $('#tab-select-utilities'),
+        $tabContents = $('.tab-content-utilities'),
+        activeClass = 'is-active';
+        $tabButtonItem.first().addClass(activeClass);
+        $tabContents.not(':first').hide();
+        $tabButtonItem.find('a').on('click', function(e) {
+      var target = $(this).attr('href');
+        $tabButtonItem.removeClass(activeClass);
+        $(this).parent().addClass(activeClass);
+        $tabSelect.val(target);
+        $tabContents.hide();
+        $(target).show();
+        e.preventDefault();
+        });
+      $tabSelect.on('change', function() {
+      var target = $(this).val(),
+        targetSelectNum = $(this).prop('selectedIndex');
+        $tabButtonItem.removeClass(activeClass);
+        $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+        $tabContents.hide();
+        $(target).show();
+        });
+        });
+
+
+

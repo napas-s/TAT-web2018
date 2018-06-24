@@ -1,0 +1,9 @@
+# TAT-web2018
+1. aboutThailand.html
+2. aboutThailand_ThailandHoliday.html
+3. aboutThailand_TravelAgents.html
+4. aboutThailand_Utilities.html
+5. destination_detail.html
+6. Multimedia_Podcast..html
+7. attractions.html
+8. attractions_detail.html

@@ -1,0 +1,643 @@
+.block-content{
+    .body-content{
+        .block-at-01{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 20px 10px;
+                @media only screen and (min-width: @screen-sm) {grid-template-columns: auto auto auto auto; grid-gap: 1%;}
+                @media only screen and (min-width: @screen-md) {grid-template-columns: auto auto auto auto; grid-gap: 1%;}
+                @media only screen and (min-width: @screen-lg) {grid-template-columns: auto auto auto auto; grid-gap: 3%;}
+                @media only screen and (min-width: @screen-xl) {grid-template-columns: auto auto auto auto; grid-gap: 3%;}
+                
+                .grid-item{
+                    position: relative;
+                    .img-block-1{
+                        width: 100%;
+                        height: 80px;
+                        mix-blend-mode: undefined;
+                        @media only screen and (min-width: @screen-xs) {height: 100px;}
+                        @media only screen and (min-width: @screen-sm) {height: 70px;}
+                        @media only screen and (min-width: 600px)      {height: 70px;}
+                        @media only screen and (min-width: 700px)      {height: 84px;}
+                        @media only screen and (min-width: @screen-md) {height: 90px;}
+                        @media only screen and (min-width: 800px)      {height: 110px;}
+                        @media only screen and (min-width: 900px)      {height: 120px;}
+                        @media only screen and (min-width: @screen-lg) {height: 120px;}
+                        @media only screen and (min-width: @screen-xl) {height: 120px;}
+                        @media only screen and (min-width: 1300px) {height: 130px;}
+                        @media only screen and (min-width: 1400px) {height: 140px;}
+                        @media only screen and (min-width: 1500px) {height: 140px;}
+                        @media only screen and (min-width: 1600px) {height: 160px;}
+                        @media only screen and (min-width: 1700px) {height: 170px;}
+                        @media only screen and (min-width: 1800px) {height: 180px;}
+                        @media only screen and (min-width: 1900px) {height: 200px;}
+
+                    }
+                    .style-text-img {
+                        position: absolute;
+                        bottom: -5px;
+                        left: 10px;
+                        right: 10px;
+                        h2{color: white;}
+                    }
+                }
+            }
+        }
+        .block-at-02{
+            .block-search{
+                .Rectangle-651{
+                    .show-or-hide{
+                        .form-group{
+                            display: none;
+                            @media only screen and (min-width: @screen-md){display: block;}
+                            @media only screen and (min-width: @screen-lg){display: block;}
+                            @media only screen and (min-width: @screen-xl){display: block;}
+                        }
+                    }
+                    &:hover{
+                        .show-or-hide{
+                            position: relative;
+                            padding: 2%;
+                            .form-group{
+                                display: block;
+                                h2{color: white;}
+                                select {
+                                    width: 100%;
+                                    height: 36px;
+                                    mix-blend-mode: undefined;
+                                    background-color: white;
+                                    border: solid 0.5px @sepia;
+                                        font-weight: bold;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: normal;
+                                        text-align: left;
+                                        color: @milk-chocolate;
+                                        letter-spacing: 0.2px;
+                                        font-size: 14px;
+                                        padding: 5px;
+                                }
+                                #custom-search-input{
+                                    padding: 0;
+                                    margin-left: 0px;
+                                    .input-group{
+                                        position: relative;
+                                        .search-query {
+                                            width: 100%;
+                                            height: 36px;
+                                            mix-blend-mode: undefined;
+                                            background-color: white;
+                                            border: solid 0.5px @sepia;
+                                                font-weight: bold;
+                                                font-style: normal;
+                                                font-stretch: normal;
+                                                line-height: normal;
+                                                text-align: left;
+                                                color: @gray;
+                                                letter-spacing: 0.2px;
+                                                font-size: 14px;
+                                          }
+                                        .input-group-btn{
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            button{
+                                                border: 0;
+                                                background: transparent;
+                                                i{color: @milk-chocolate;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .btn-show-hide {
+                                margin-top: 5%;
+                                @media only screen and (min-width: @screen-md){margin-top: 15%;}
+                                @media only screen and (min-width: @screen-lg){margin-top: 15%;}
+                                @media only screen and (min-width: @screen-xl){margin-top: 10%;}
+                                width: 100%;
+                                height: 51px;
+                                mix-blend-mode: undefined;
+                                box-shadow: 0px 2px 23.3px 0.7px rgba(107, 82, 36, 0.4);
+                                background-color: @desert;
+                                border: solid 0.5px @sepia;
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: normal;
+                                    letter-spacing: 0.2px;
+                                    text-align: center;
+                                    color: white;
+                                    font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .block-at-03{
+            position: relative;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .grid-container{
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns:  48% 48%;
+                grid-gap: 20px 10px; 
+                @media only screen and (min-width: @screen-xs){grid-template-columns:  49% 49%;}
+                @media only screen and (min-width: @screen-sm){ margin-top: 40px; grid-template-columns:  auto auto auto; grid-gap: 20px 10px;}
+                @media only screen and (min-width: @screen-md){ margin-top: 40px; grid-template-columns:  auto auto auto; grid-gap: 30px 20px;}
+                @media only screen and (min-width: @screen-lg){ margin-top: 40px; grid-template-columns:  23% 23% 23% 23%; grid-gap: 30px 20px; }
+                @media only screen and (min-width: @screen-xl) {margin-top: 40px; grid-template-columns:  23% 23% 23% 23%; grid-gap: 40px 30px; }
+                .grid-item{
+                    border: solid 1px @desert;
+                    padding: 0;
+                    margin: 0;
+                    .img-block-1{
+                        padding: 0;
+                        margin: 0;
+                        height: 109.8px;
+                        @media only screen and (min-width: @screen-xs) {height: 130px;}
+                        @media only screen and (min-width: 500px)      {height: 150px;}
+                        @media only screen and (min-width: @screen-sm) {height: 110px;}
+                        @media only screen and (min-width: 600px)      {height: 130px;}
+                        @media only screen and (min-width: 700px)      {height: 140px;}
+                        @media only screen and (min-width: @screen-md) {height: 140px;}
+                        @media only screen and (min-width: 800px)      {height: 160px;}
+                        @media only screen and (min-width: 900px)      {height: 180px;}
+                        @media only screen and (min-width: @screen-lg) {height: 140px;}
+                        @media only screen and (min-width: @screen-xl) {height: 150px;}
+                        @media only screen and (min-width: 1300px) {height: 150px;}
+                        @media only screen and (min-width: 1400px) {height: 160px;}
+                        @media only screen and (min-width: 1500px) {height: 170px;}
+                        @media only screen and (min-width: 1600px) {height: 200px;}
+                        @media only screen and (min-width: 1700px) {height: 200px;}
+                        @media only screen and (min-width: 1800px) {height: 240px;}
+                        @media only screen and (min-width: 1900px) {height: 260px;}
+                    }
+                    .grid-content{
+                        border-top: solid 1px @desert;
+                        padding: 10px;
+                        @media only screen and (min-width: @screen-md) {padding: 20px;}
+                        @media only screen and (min-width: @screen-lg) {padding: 20px;}
+                        @media only screen and (min-width: @screen-xl) {padding: 20px;}
+                        .grid-head{
+                            display: grid;
+                            grid-template-columns: 90% 5%;
+                            @media only screen and (min-width: @screen-sm) {grid-template-columns: 80% 5%;}
+                            @media only screen and (min-width: @screen-md) {grid-template-columns: 90% 5%;}
+                            @media only screen and (min-width: @screen-lg) {grid-template-columns: 90% 5%;}
+                            @media only screen and (min-width: @screen-xl) {grid-template-columns: 90% 5%;}
+                            position: relative;
+                            .grid-title {
+                                color: @black;
+                                i{
+                                    padding: 10px;
+                                    color: @dark-red;
+                                }
+                            }
+                            .grid-icon{
+                                text-align: right;
+                                color: @sepia;
+                                .keyboard_arrow_right()
+                            }
+                        }
+                        .grid-body{
+                            display: grid;
+                            grid-template-columns: auto;
+                            grid-gap: 10px 10px;
+                            @media only screen and (min-width: @screen-md) {grid-template-columns:  auto auto;}
+                            @media only screen and (min-width: @screen-lg) {grid-template-columns:  auto;}
+                            @media only screen and (min-width: @screen-xl) {grid-template-columns:  auto auto;}
+                            @media only screen and (min-width: 1300px) {grid-template-columns:  20% auto;}
+                            .location_ic{
+                                width: 28px;
+                                height: 25px;
+                                object-fit: contain;
+                                mix-blend-mode: undefined;
+                            }
+                            .style-text{color: @very-dark-gray;}
+                        }
+                        .grid-footer{
+                            display: grid;
+                            grid-template-columns:  auto ;
+                            grid-gap: 2% 2%;
+                            @media only screen and (min-width: @screen-sm) {grid-template-columns:  auto;}
+                            @media only screen and (min-width: @screen-md) {grid-template-columns:  auto auto;}
+                            @media only screen and (min-width: @screen-lg) {grid-template-columns:  auto;}
+                            @media only screen and (min-width: @screen-xl) {grid-template-columns:  auto auto;}
+                            label{
+                                mix-blend-mode: undefined;
+                                color: @dark-red;
+                                text-decoration: underline;
+                                .tags()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .block-at-04{
+            background: @very-light-gray;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            @media only screen and (min-width: @screen-lg){padding-top: 65px;padding-bottom: 10px;}
+            @media only screen and (min-width: @screen-xl){padding-top: 65px;padding-bottom: 10px;}
+            .block-drop-img{
+                .grid-container{
+                    display: grid;
+                    grid-template-columns:  50% 50%;
+                    grid-gap: 0px 0px;
+                    @media only screen and (min-width: @screen-lg) {grid-template-columns:  19.2% 19.2% 19.2% 19.2% 19.2%; grid-gap: 3px 3px;}
+                    @media only screen and (min-width: @screen-xl) {grid-template-columns:  19.2% 19.2% 19.2% 19.2% 19.2%; grid-gap: 10px 10px;}
+                    
+                    .grid-item{
+                        margin-bottom: -10px;
+                        @media only screen and (min-width: @screen-xl){margin-bottom: unset;}
+                        .select-item{
+                            cursor: pointer;
+                            position: relative;
+                            figure{
+                                position: relative;
+                                border: solid 6px transparent;
+                                border-radius: 10px;
+                                .actions{
+                                    display: none;
+                                    position: absolute;
+                                    opacity: 0.6;
+                                    mix-blend-mode: undefined;
+                                    background-color: black;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                }
+                            }
+                            .hover-title{
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: unset;
+                                bottom: 10px;
+                                .select-title{
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: normal;
+                                    letter-spacing: 0.3px;
+                                    text-align: center;
+                                    color: white;
+                                    font-size: 14px;
+                                    @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+                                    @media only screen and (min-width: @screen-sm) {font-size: 16px;}
+                                    @media only screen and (min-width: @screen-md) {font-size: 16px;}
+                                    @media only screen and (min-width: @screen-lg) {font-size: 18px;}
+                                    @media only screen and (min-width: @screen-xl) {font-size: 20px;}
+                                }
+                            }
+                            .hover-fix{display: none;}
+                        }
+                        &:hover{
+                            .select-item{
+                                cursor: pointer;
+                                position: relative;
+                                figure{
+                                    position: relative;
+                                    .actions{
+                                        display: block;
+                                        position: absolute;
+                                        opacity: 0.6;
+                                        mix-blend-mode: undefined;
+                                        background-color: black;
+                                        left: 0;
+                                        right: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                    }
+                                }
+                                .hover-title{
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 10px;
+                                    bottom: unset;
+                                    .select-title{
+                                        font-weight: bold;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: normal;
+                                        letter-spacing: 0.3px;
+                                        text-align: center;
+                                        color: white;
+                                        font-size: 14px;
+                                        @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+                                        @media only screen and (min-width: @screen-sm) {font-size: 16px;}
+                                        @media only screen and (min-width: @screen-md) {font-size: 16px;}
+                                        @media only screen and (min-width: @screen-lg) {font-size: 18px;}
+                                        @media only screen and (min-width: @screen-xl) {font-size: 20px;}
+                                    }
+                                }
+                                .hover-fix{
+                                    display: block;
+                                    position: absolute;
+                                    bottom: -5px;
+                                    @media only screen and (min-width: @screen-xl) {bottom: -10px;}
+                                    left: 0;
+                                    right: 0;
+                                    .block-eye{
+                                        position: relative;
+                                        text-align: center;
+                                        .Ellipse-1{  
+                                            width: 41px;
+                                            height: 41px;
+                                            @media only screen and (min-width: @screen-xs) {width: 51px; height: 51px;}
+                                            @media only screen and (min-width: @screen-sm) {width: 61px; height: 61px;}
+                                            @media only screen and (min-width: @screen-lg) {width: 41px; height: 41px;}
+                                            @media only screen and (min-width: @screen-xl) {width: 61px; height: 61px;}
+                                            text-align: center;
+                                            mix-blend-mode: undefined;
+                                            background-color: white;
+                                            box-shadow: 0px -1px 8.2px 0.8px rgba(0, 0, 0, 0.6);
+                                            border-radius: 50%;
+                                            i{
+                                                text-align: center;
+                                                color: @milk-chocolate;
+                                                padding: 20%;
+                                                font-size: 24px;
+                                                @media only screen and (min-width: @screen-xs) {font-size: 28px;}
+                                                @media only screen and (min-width: @screen-sm) {font-size: 36px;}
+                                                @media only screen and (min-width: @screen-lg) {font-size: 24px;}
+                                                @media only screen and (min-width: @screen-xl) {font-size: 36px;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .select-item-show{display: none}
+                    }
+                    .grid-item-select{
+                        .select-item{
+                            cursor: pointer;
+                            position: relative;
+                            figure{
+                                position: relative;
+                                border: solid 6px @dark-red;
+                                border-radius: 10px;
+                                .actions{
+                                    display: none;
+                                    position: absolute;
+                                    opacity: 0.6;
+                                    mix-blend-mode: undefined;
+                                    background-color: black;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                }
+                            }
+                            .hover-title{
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: unset;
+                                bottom: 10px;
+                                .select-title{
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: normal;
+                                    letter-spacing: 0.3px;
+                                    text-align: center;
+                                    color: white;
+                                    font-size: 14px;
+                                    @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+                                    @media only screen and (min-width: @screen-sm) {font-size: 16px;}
+                                    @media only screen and (min-width: @screen-md) {font-size: 16px;}
+                                    @media only screen and (min-width: @screen-lg) {font-size: 18px;}
+                                    @media only screen and (min-width: @screen-xl) {font-size: 20px;}
+                                }
+                            }
+                            .hover-fix{display: none;}
+                        }
+                        &:hover{
+                            .select-item{
+                                cursor: pointer;
+                                position: relative;
+                                figure{
+                                    position: relative;
+                                    border: solid 6px @dark-red;
+                                    border-radius: 10px;
+                                    .actions{
+                                        display: none;
+                                        position: absolute;
+                                        opacity: 0.6;
+                                        mix-blend-mode: undefined;
+                                        background-color: black;
+                                        left: 0;
+                                        right: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                    }
+                                }
+                                .hover-title{
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: unset;
+                                    bottom: 10px;
+                                    .select-title{
+                                        font-weight: bold;
+                                        font-style: normal;
+                                        font-stretch: normal;
+                                        line-height: normal;
+                                        letter-spacing: 0.3px;
+                                        text-align: center;
+                                        color: white;
+                                        font-size: 14px;
+                                        @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+                                        @media only screen and (min-width: @screen-sm) {font-size: 16px;}
+                                        @media only screen and (min-width: @screen-md) {font-size: 16px;}
+                                        @media only screen and (min-width: @screen-lg) {font-size: 18px;}
+                                        @media only screen and (min-width: @screen-xl) {font-size: 20px;}
+                                    }
+                                }
+                                .hover-fix{display: none;}
+                            }
+                        }
+                        .select-item-show{
+                            clear: both;
+                            display: block;
+                            padding: 0;
+                            margin-top: -14px;
+                            margin-bottom: 20px;
+                            .icon-select{
+                                width: 40px;
+                                height: 20px;
+                                object-fit: contain;
+                                mix-blend-mode: undefined;
+                                background: url('../images/vectors/rec-accordion.png');
+                            }
+                            .select-block{
+                                height: 744px;
+                                @media only screen and (min-width:520px)        {height: 760px;}
+                                @media only screen and (min-width:560px)        {height: 780px;}
+                                @media only screen and (min-width:@screen-sm)   {height: 840px;}
+                                @media only screen and (min-width:600px)        {height: 860px;}
+                                @media only screen and (min-width:620px)        {height: 880px;}
+                                @media only screen and (min-width:650px)        {height: 900px;}
+                                @media only screen and (min-width:670px)        {height: 930px;}
+                                @media only screen and (min-width:740px)        {height: 960px;}
+                                @media only screen and (min-width: @screen-md)  {height: 611px;}
+                                @media only screen and (min-width: 920px)       {height: 631px;}
+                                @media only screen and (min-width: @screen-lg)  {height: 361px;}
+                                @media only screen and (min-width: @screen-xl)  {height: 351px;}
+                                @media only screen and (min-width: 1600px){height: 381px;}
+                                .select-detail{
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    border: solid 6px @dark-red;
+                                    border-radius: 10px;
+                                    background: white;
+                                    height: 744px;
+                                    @media only screen and (min-width:520px)        {height: 760px;}
+                                    @media only screen and (min-width:560px)        {height: 780px;}
+                                    @media only screen and (min-width:@screen-sm)   {height: 840px;}
+                                    @media only screen and (min-width:600px)        {height: 860px;}
+                                    @media only screen and (min-width:620px)        {height: 880px;}
+                                    @media only screen and (min-width:650px)        {height: 900px;}
+                                    @media only screen and (min-width:670px)        {height: 930px;}
+                                    @media only screen and (min-width:740px)        {height: 960px;}
+                                    @media only screen and (min-width: @screen-md)  {height: 611px;}
+                                    @media only screen and (min-width: 920px)       {height: 431px;}
+                                    @media only screen and (min-width: @screen-lg)  {height: 361px;}
+                                    @media only screen and (min-width: @screen-xl){height: 351px;}
+                                    @media only screen and (min-width: 1600px){height: 381px;}
+                                    .grid-container{
+                                        padding: 5%;
+                                        display: grid;
+                                        grid-template-columns: auto;
+                                        @media only screen and (min-width: @screen-lg){grid-template-columns: 49% 1% 50%;  padding: 2%;}
+                                        @media only screen and (min-width: @screen-xl){grid-template-columns: 49% 1% 50%;  padding: 2%;}
+                                        
+                                        .grid-left{
+                                            .style-head-st{
+                                                position: relative;
+                                                display: grid;
+                                                grid-template-columns: auto 5%;
+                                                i{
+                                                    margin-top: 10px;
+                                                    .keyboard_arrow_right()
+                                                }
+                                            }
+                                            .style-body-st{
+                                                width: 90%;
+                                                p{
+                                                    color: @black;
+                                                    text-align: left;
+                                                    height: unset;
+                                                    white-space: unset;
+                                                    text-overflow: unset;
+                                                    overflow: unset;
+                                                    @media only screen and (min-width: @screen-lg){text-align: justify; height: 7.4em;white-space: wrap;text-overflow: ellipsis;overflow: hidden;}
+                                                    @media only screen and (min-width: @screen-xl){text-align: justify; height: 7.4em;white-space: wrap;text-overflow: ellipsis;overflow: hidden;}
+                                                }
+                                            }
+                                            .style-footer-st{
+                                                width: 100%;
+                                                @media only screen and (min-width: @screen-xl){width: 90%;}
+                                                .style-text{
+                                                    float: left;
+                                                    padding-top: 1%;
+                                                    padding-bottom: 1%;
+                                                    padding-right: 4%;
+                                                    mix-blend-mode: undefined;
+                                                    color: @dark-red;
+                                                    text-decoration: underline;
+                                                    .tags()
+                                                }
+                                            }
+                                        }
+                                        .divider {
+                                            margin-top: 10px;
+                                            width: 100%;
+                                            height: 1px;
+                                            @media only screen and (min-width: 500px){margin-top: 16px;}
+                                            @media only screen and (min-width: @screen-md){margin-top: 20px;}
+                                            @media only screen and (min-width: @screen-lg){margin-top: unset; width: 1px; height: 300px;}
+                                            @media only screen and (min-width: 1000px){margin-top: unset; width: 1px; height: 300px;}
+                                            @media only screen and (min-width: @screen-xl){margin-top: unset; width: 1px; height: 271px;}
+                                            mix-blend-mode: undefined;
+                                            background-image: radial-gradient(circle at 0 0, @desert, @sepia), linear-gradient(to left, @sepia, @desert 50%, @sepia);
+                                        }
+                                        .grid-right{
+                                            margin-top: 10px;
+                                            @media only screen and (min-width: 500px){margin-top: 16px;}
+                                            @media only screen and (min-width: @screen-md){margin-top: 20px;}
+                                            @media only screen and (min-width: @screen-lg){margin-top: 10%;}
+                                            @media only screen and (min-width: @screen-xl){margin-top: 10%;}
+                                            @media only screen and (min-width: 1300px){margin-top: 8%;}
+                                            @media only screen and (min-width: 1400px){margin-top: 6%;}
+                                            @media only screen and (min-width: 1500px){margin-top: 6%;}
+                                            @media only screen and (min-width: 1600px){margin-top: 6%;}
+                                            @media only screen and (min-width: 1700px){margin-top: 5%;}
+                                            @media only screen and (min-width: 1800px){margin-top: 4%;}
+                                            @media only screen and (min-width: 1900px){margin-top: 4%;}
+                                            .dt-img{
+                                                margin: 5%;
+                                                .pexels-photo{}
+                                                .img-title {
+                                                    margin-top: 5%;
+                                                    margin-bottom: 5%;
+                                                    color: @black;
+                                                    font-weight: bold;
+                                                    .st-text()
+                                                }
+                                                .img-detail {
+                                                    p{
+                                                        color: @very-dark-gray;
+                                                        height: 4.5em;
+                                                        white-space: wrap;
+                                                        text-overflow: ellipsis;
+                                                        overflow: hidden;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .block-at-05{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .grid-container{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 20px;
+                @media only screen and (min-width: @screen-xl){grid-template-columns: 66% auto; grid-gap: 1% 3%;}
+                .banner-traveldeals {
+                    height: 83px;
+                    @media only screen and (min-width: @screen-xs){height: 100px;}
+                    @media only screen and (min-width: @screen-sm){height: 124px;}
+                    @media only screen and (min-width: @screen-md){height: 164px;}
+                    @media only screen and (min-width: @screen-lg){height: 180px;}
+                    @media only screen and (min-width: @screen-xl){height: 207px;}
+                }
+                .grid-body{
+                    .active{color: @milk-chocolate;}
+                    .span-line{margin-top: -20px; color: @milk-chocolate;}
+                    .style-text{color: @black; text-align: justify;}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,929 @@
+doctype html
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Bootstrap CSS
+    link(rel="stylesheet" href="../src/assets/vendor/bootstrap-4.1.0-dist/css/bootstrap.min.css")
+    //css
+    link(rel="stylesheet", href="../src/css/styles.css")
+    title Attractions
+  body
+    // navigate bar
+    include _components/nav.pug
+    // banner
+    section.block-banner
+      img.abt_HeroBanner(src="../src/images/banner/banner-noImg.jpg")
+      // Vector
+      .block-vector
+        img.Banner_cos_left(src="../src/images/vectors/banner-cos-left.png")
+        img.Banner_cos_right(src="../src/images/vectors/banner-cos-right.png")
+        
+    // content
+    article.block-content
+      .head-content
+        .head-title ATTRACTIONS
+        .head-body 
+          | Thailand is a kingdom of wonder, filled with spectacular natural, cultural, and historical attractions. Which Thailand attractions are you looking forward to discovering on your Thailand holiday?
+      .body-content
+        .block-at-01
+            .grid-container
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/I-04-family.jpg")
+                .style-text-img 
+                  h2 Family
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/I-03-Honeymoon.jpg")
+                .style-text-img 
+                  h2 Honeymoon
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/I-02-Thainess.jpg")
+                .style-text-img 
+                  h2 Nature
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/I-01-Nature.jpg")
+                .style-text-img 
+                  h2 Thainess
+        .block-at-02
+          .block-search
+            .Rectangle-651
+              .Rectangle-651
+                .style-head-search search
+                .show-or-hide
+                  .row
+                    .col-md-4.col-lg-4.col-xl-4#hide
+                      .form-group
+                        h2 By Category
+                        select.form-control
+                          option Royal Project , Research and...
+                    .col-md-4.col-lg-4.col-xl-4#hide
+                      .form-group
+                        h2 By Sub-Category
+                        select.form-control
+                          option Outdoor Activity and Advent...
+                    .col-md-4.col-lg-4.col-xl-4#hide
+                      .form-group
+                        h2 By Destinations
+                        select.form-control
+                          option Pharachuab Khriri Khan
+                    .col-md-8.col-lg-8.col-xl-8#hide
+                      .form-group
+                        h2 Keywords
+                        #custom-search-input
+                          .input-group
+                            input.search-query.form-control(type='text', placeholder='Keywords')
+                            span.input-group-btn
+                              button(type='button', disabled='')
+                                i.fa.fa-search
+                    .col-md-4.col-lg-4.col-xl-4.block-pd
+                        button.btn-show-hide 
+                          i.fa.fa-search 
+                          | SEARCH
+        .block-at-03
+          .containers
+            .style-head recommend attractions
+            .grid-container
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/01.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 The Grand Palace
+                        i.fa.fa-tag
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                  .grid-footer
+                    label Where to go
+                    label Temple
+                    label Royal Palace
+                    label Historical
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/02.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Wat Pho
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Maharat Road, Phra Nakorn District, Bangkok
+                  .grid-footer
+                    label Temple
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/03.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 China Town
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/04.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Jim Thompson House
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/01.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 The Grand Palace
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                  .grid-footer
+                    label Where to go
+                    label Temple
+                    label Royal Palace
+                    label Historical
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/02.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Wat Pho
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Maharat Road, Phra Nakorn District, Bangkok
+                  .grid-footer
+                    label Temple
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/03.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 China Town
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/04.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Jim Thompson House
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/01.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 The Grand Palace
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+                  .grid-footer
+                    label Where to go
+                    label Temple
+                    label Royal Palace
+                    label Historical
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/02.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Wat Pho
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Maharat Road, Phra Nakorn District, Bangkok
+                  .grid-footer
+                    label Temple
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/03.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 China Town
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+              .grid-item
+                img.img-block-1(src="../src/images/attractions/04.jpg")
+                .grid-content
+                  .grid-head
+                    .grid-title 
+                      h2 Jim Thompson House
+                    .grid-icon
+                      i.keyboard_arrow_right.fa.fa-angle-right
+                  .grid-body
+                    img.location_ic(src='../src/images/vectors/location-ic.jpg', srcset='../src/images/vectors/location-ic@2x.jpg 2x,../src/images/vectors/location-ic@3x.jpg 3x')
+                    p.style-text Yaowarat Road, Yaowarat, Samphanthawong, Bangkok
+                  .grid-footer
+                    label Night Market
+                    label Village
+                    label Community
+            .style-view view more Attractions
+        .block-at-04
+          .block-drop-img
+            .grid-container
+              .grid-item
+                .select-item
+                  figure
+                    img.img1(src="../src/images/attractions/T-1.jpg" )
+                    .actions
+                  .hover-title
+                    .select-title Bangkok
+                  .hover-fix
+                    .block-eye
+                      center
+                        .Ellipse-1
+                          i.material-icons remove_red_eye
+                #myDIV1.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Bangkok
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img2(src="../src/images/attractions/T-2.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Hua Hin
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV2.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Hua Hin
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img3(src="../src/images/attractions/T-3.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Samui
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV3.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Samui
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img4(src="../src/images/attractions/T-4.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Kanchanaburi
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV4.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Kanchanaburi
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img5(src="../src/images/attractions/T-5.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Petchaburi
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV5.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Petchaburi
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img6(src="../src/images/attractions/T-6.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Chiang Mai
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV6.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Chiang Mai
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img7(src="../src/images/attractions/T-7.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Satun
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV7.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Satun
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img8(src="../src/images/attractions/T-8.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Pattaya
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV8.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Pattaya
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img9(src="../src/images/attractions/T-9.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Koh Chang
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV9.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Koh Chang
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              .grid-item
+                .select-item
+                    figure
+                      img.img10(src="../src/images/attractions/T-10.jpg" )
+                      .actions
+                    .hover-title
+                      .select-title Krabi
+                    .hover-fix
+                      .block-eye
+                        center
+                          .Ellipse-1
+                            i.material-icons remove_red_eye
+                #myDIV10.select-item-show
+                  center  
+                    .icon-select
+                  .select-block
+                    .select-detail 
+                      .grid-container
+                        .grid-left
+                          .style-head-st
+                            .row
+                              .col-10
+                                h2 Krabi
+                              .col-2
+                                i.material-icons keyboard_arrow_right
+                          .style-body-st
+                            p 
+                              | There are a great variety of tourist places in Bangkok, mostly historical attractions and temples with elaborate architecture and art. Famous temples are Wat Phra Kaew, Wat Pho, Wat Arun, Wat Phu Khao Thong, Wat Ratchanadda, Wat Traimit, Wat Benchamabophit
+                              | Bangkok nightlife is another highlight that has attracted many of tourists from all over the world.
+                          .style-footer-st
+                            .style-text Where to go
+                            .style-text Temple
+                            .style-text Royal Palace
+                            .style-text Historical
+                            .style-text Shopping
+                            .style-text Park
+                            .style-text Capital
+                            .style-text Destination
+                        .divider
+                        .grid-right
+                          .row.no-gutters
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-01.jpg")
+                                .img-title The Grand Palace
+                                .img-detail 
+                                  p Located at the heart of Bangkok, Thailand.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-02.jpg")
+                                .img-title King Prajadhipok Museum
+                                .img-detail 
+                                  p is situated in the area of the Department of Public Works and Town & Country Planning Building at the Parn Fah Leelad Bridge.
+                            .col-6.col-md-4.col-lg-4.col-xl-4
+                              .dt-img
+                                img.pexels-photo(src="../src/images/attractions/s-03.jpg")
+                                .img-title The Queen’s Gallery
+                                .img-detail 
+                                  p  displayed the work of Thai artists, especially the new Thai artists whose works have not been known by the society
+              
+          
+          .clearfix
+          .style-view view all top destinations
+        .block-at-05
+          .grid-container
+            img.banner-traveldeals(src="../src/images/attractions/banner-traveldeals.jpg")
+            .grid-body
+              h2.active Special Tour Promotions in Thailand 
+              h2.span-line - 
+              p.style-text No matter what time of year, you can always go out for a wonderful getaway. Find all the best deals for accommodation, air tickets, and tour packages here!
+    //footer
+    include _components/footer.pug
+
+    // Optional JavaScript
+    script(type='text/javascript', src="../src/js/script.js")  
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/jquery-3.3.1.slim.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/popper.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/bootstrap.min.js")  
+
+    
+  
+    script.
+      $('div').click(function() {
+        $(this).siblings().removeClass('grid-item-select');
+        $(this).addClass('grid-item-select');
+      });
+    script.
+      $(document).ready(function(){
+        $(".img1").click(function(){
+          $("#myDIV1").toggle();
+        });
+        $(".img2").click(function(){
+          $("#myDIV2").toggle();
+        });
+        $(".img3").click(function(){
+          $("#myDIV3").toggle();
+        });
+        $(".img4").click(function(){
+          $("#myDIV4").toggle();
+        });
+        $(".img5").click(function(){
+          $("#myDIV5").toggle();
+        });
+        $(".img6").click(function(){
+          $("#myDIV6").toggle();
+        });
+        $(".img7").click(function(){
+          $("#myDIV7").toggle();
+        });
+        $(".img8").click(function(){
+          $("#myDIV8").toggle();
+        });
+        $(".img9").click(function(){
+          $("#myDIV9").toggle();
+        });
+        $(".img10").click(function(){
+          $("#myDIV10").toggle();
+        });
+      });
+
+
+    
+
+
+
+
+    
+ 
+

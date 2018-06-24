@@ -1,0 +1,783 @@
+.block-content{
+    .head-content{
+        a.morelink {
+            outline: none;
+            display: unset;
+            @media only screen and (min-width: @screen-sm){display: none;}
+            @media only screen and (min-width: @screen-md){display: none;}
+            @media only screen and (min-width: @screen-lg){display: none;}
+            @media only screen and (min-width: @screen-xl){display: none;}
+        }
+        .morecontent span {
+            display: none;
+            @media only screen and (min-width: @screen-sm){display: unset;}
+            @media only screen and (min-width: @screen-md){display: unset;}
+            @media only screen and (min-width: @screen-lg){display: unset;}
+            @media only screen and (min-width: @screen-xl){display: unset;}
+        }
+        
+    }
+    .body-content{
+        .block-01-des{
+            position: relative;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            .Vector-Smart-Object-left{
+                display: none;
+                position: absolute;
+                left: 30px;
+                @media only screen and (min-width: @screen-lg) {
+                    display: unset;
+                    left: 0px;
+                    bottom: -30px;
+                    width: 171px;
+                    height: 190px;
+                    z-index: -1;
+                }
+                @media only screen and (min-width: @screen-xl) {
+                    display: unset;
+                    left: 30px;
+                    bottom: -40px;
+                    width: 171px;
+                    height: 200px;
+                    z-index: -1;
+                }
+            }
+            .Vector-Smart-Object-right{
+                display: none;
+                position: absolute;
+                right: 30px;
+                
+                @media only screen and (min-width: @screen-lg) {
+                    display: unset;
+                    right: 0px;
+                    width: 89px;
+                    height: 115px;
+                    top: -70px;
+                    z-index: -1;
+                }
+                @media only screen and (min-width: @screen-xl) {
+                    display: unset;
+                    right: 30px;
+                    width: 89px;
+                    height: 135px;
+                    top: -65px;
+                    z-index: -1;
+                }
+            }
+            .block-des{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 26px 0px;
+                @media only screen and (min-width: @screen-lg){grid-gap: 26px 26px; grid-template-columns: 30% auto;}
+                @media only screen and (min-width: @screen-xl){grid-gap: 26px 26px; grid-template-columns: 30% auto;}
+                @media only screen and (min-width: 1400px)    {grid-gap: 26px 26px; grid-template-columns: 24% auto;}
+                @media only screen and (min-width: 1450px)    {grid-gap: 26px 26px; grid-template-columns: 23% auto;}
+                @media only screen and (min-width: 1600px)    {grid-gap: 26px 26px; grid-template-columns: 21% auto;}
+                @media only screen and (min-width: 1700px)    {grid-gap: 26px 26px; grid-template-columns: 20% auto;}
+                @media only screen and (min-width: 1800px)    {grid-gap: 26px 26px; grid-template-columns: 18.5% auto;}
+                @media only screen and (min-width: 1900px)    {grid-gap: 26px 26px; grid-template-columns: 17% auto;}
+                .box-tag {
+                    .temp-tag{
+                        border: solid 1px @desert;
+                        background: white;
+                        height: auto;
+                        padding-top: 2%; padding-bottom: 2%; padding-left: 5%; padding-right: 5%;
+                        @media only screen and (min-width: @screen-xs){padding-top: 2%;padding-bottom: 2%;padding-left: 5%;padding-right: 5%;}
+                        @media only screen and (min-width: @screen-sm){padding-top: 3%;padding-bottom: 3%;padding-left: 3%;padding-right: 3%;}
+                        @media only screen and (min-width: @screen-md){padding-top: 4%;padding-bottom: 4%;padding-left: 4%;padding-right: 4%;}
+                        @media only screen and (min-width: @screen-lg){padding-top: 6%;padding-bottom: 6%;padding-left: 6%;padding-right: 6%;}
+                        @media only screen and (min-width: @screen-xl){padding-top: 6%;padding-bottom: 6%;padding-left: 6%;padding-right: 6%;}
+                        .style-body{
+                            mix-blend-mode: undefined;
+                            color: @dark-red;
+                            text-decoration: underline;
+                            .col-auto{
+                                padding-bottom: 1%;
+                                @media only screen and (min-width: @screen-sm){ padding-bottom: 1%;}
+                                @media only screen and (min-width: @screen-lg){ padding-bottom: 2%;}
+                                @media only screen and (min-width: @screen-xl){ padding-bottom: 4%;}
+                            }
+                            .tags()
+                        }
+                    }
+                }
+                .box-tab{
+                    .tab-tag{
+                        .tab-button-outer{
+                            display: none;
+                            @media only screen and (min-width: @screen-sm){display: block;}
+                            @media only screen and (min-width: @screen-md){display: block;}
+                            @media only screen and (min-width: @screen-lg){display: block;}
+                            @media only screen and (min-width: @screen-xl){display: block;}
+                            .nav,.nav-tabs{
+                                .nav-item{
+                                    margin: 0;
+                                    .nav-link{
+                                        text-align: center;
+                                        background-color: white;
+                                        border: solid 2px @slightly-desaturated-orange;
+                                        color: @slightly-desaturated-orange;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        width: 160px;
+                                        height: 50px;
+                                        @media only screen and (min-width: @screen-sm){
+                                            padding-top: 10px;
+                                            padding-bottom: 10px;
+                                            width: 180px;
+                                            height: 50px;
+                                        }
+                                        @media only screen and (min-width: @screen-md){
+                                            padding-top: 10px;
+                                            padding-bottom: 10px;
+                                            width: 230px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    .active{
+                                        background-color:@slightly-desaturated-orange;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        .tab-select-outer{
+                            display: block;
+                            @media only screen and (min-width: @screen-sm){display: none;}
+                            @media only screen and (min-width: @screen-md){display: none;}
+                            @media only screen and (min-width: @screen-lg){display: none;}
+                            @media only screen and (min-width: @screen-xl){display: none;}
+                            select{
+                                height: 40px;
+                                border: 2px solid @slightly-desaturated-orange;
+                                border-top-left-radius: 10px;
+                                border-top-right-radius: 10px;
+                            }
+                        }
+                    }
+                    .tab-body-tag{
+                        .tab-content-tag{
+                            border: solid 2px @slightly-desaturated-orange;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            @media only screen and (min-width: @screen-sm){
+                                border: solid 2px @slightly-desaturated-orange;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                            }
+                            @media only screen and (min-width: @screen-md){
+                                border: solid 2px @slightly-desaturated-orange;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                            }
+                            @media only screen and (min-width: @screen-lg){
+                                border: solid 2px @slightly-desaturated-orange;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                            }
+                            @media only screen and (min-width: @screen-xl){
+                                border: solid 2px @slightly-desaturated-orange;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                            }
+                            .map{
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                @media only screen and (min-width: @screen-sm){
+                                    border-top-left-radius: 0px;
+                                    border-top-right-radius: 10px;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                }
+                                @media only screen and (min-width: @screen-md){
+                                    border-top-left-radius: 0px;
+                                    border-top-right-radius: 10px;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                }
+                                @media only screen and (min-width: @screen-lg){
+                                    border-top-left-radius: 0px;
+                                    border-top-right-radius: 10px;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                }
+                                @media only screen and (min-width: @screen-xl){
+                                    border-top-left-radius: 0px;
+                                    border-top-right-radius: 10px;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .block-02-des{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            .tab-how-to-go{
+                padding-top: 3%;
+                .tab-button-outer{
+                    display: none;
+                    @media only screen and (min-width: @screen-sm){display: block;}
+                    @media only screen and (min-width: @screen-md){display: block;}
+                    @media only screen and (min-width: @screen-lg){display: block;}
+                    @media only screen and (min-width: @screen-xl){display: block;}
+                    .nav,.nav-tabs{
+                        .nav-item{
+                            .nav-link{
+                                background: transparent;
+                            }
+                            .active{
+                                background: transparent;
+                            }
+                            i{padding-right: 10px;}
+                        }
+                    }
+                }
+                .tab-select-outer{
+                    display: block;
+                    @media only screen and (min-width: @screen-sm){display: none;}
+                    @media only screen and (min-width: @screen-md){display: none;}
+                    @media only screen and (min-width: @screen-lg){display: none;}
+                    @media only screen and (min-width: @screen-xl){display: none;}
+                    select{
+                        background: transparent;
+                        height: 40px;
+                    }
+                }
+                .tab-body-how-to-go{
+                    padding-top: 5px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    @media only screen and (min-width: @screen-sm){padding-top: 5px; padding-left: 20px; padding-right: 20px;}
+                    @media only screen and (min-width: @screen-md){padding-top: 5px; padding-left: 20px; padding-right: 20px;}
+                    @media only screen and (min-width: @screen-lg){padding-top: 10px; padding-left: 34px; padding-right: 34px;}
+                    @media only screen and (min-width: @screen-xl){padding-top: 40px; padding-left: 64px; padding-right: 64px;}
+                    .tab-content-how-to-go{
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.5;
+                        letter-spacing: 0.2px;
+                        text-align: left;
+                        color: @black;
+                        .font-16()
+                    }
+                }
+            }
+        }
+        .block-03-des{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @media only screen and (min-width: @screen-xl){margin-top: 70px; margin-bottom: 70px;}
+            .box-recommend{
+                margin-top: 3%;
+                .grid-container{
+                    display: grid;
+                    grid-template-columns: 49% 49%;
+                    grid-gap: 10px 10px;
+                    @media only screen and (min-width: @screen-xs){grid-template-columns: 49% 49%; grid-gap: 20px 10px;}
+                    @media only screen and (min-width: @screen-sm){grid-template-columns: 49.5% 49.5%; grid-gap: 20px 10px;}
+                    @media only screen and (min-width: 700px){grid-template-columns: 24% 24% 24% 24%; grid-gap: 20px 10px;}
+                    @media only screen and (min-width: @screen-md){grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-gap: 20px 15px;}
+                    @media only screen and (min-width: @screen-lg){grid-template-columns: 23.5% 23.5% 23.5% 23.5%; grid-gap: 20px 20px;}
+                    @media only screen and (min-width: @screen-xl){grid-template-columns: 22.5% 22.5% 22.5% 22.5%; grid-gap: 20px 30px;}
+                    .grid-item{
+                        border: solid 1px @desert;
+                        .card{
+                            border: 0;
+                            border-radius: 0;
+                            margin-top: -1px;
+                            margin-left: -1px;
+                            margin-right: -1px;
+                            .card-img-top{
+                                border-radius: 0;
+                                width: 100%;
+                                height: auto;
+                            }
+                            .card-body{
+                                border-top: solid 1px @desert;
+                                border-left: solid 1px @desert;
+                                border-right: solid 1px @desert;
+                                border-bottom: 0;
+                                padding-top: 10px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                padding-bottom: 0px;
+                                @media only screen and (min-width: @screen-xl){padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px;}
+                                .card-title{
+                                    position: relative;
+                                    .left {text-align: left;}
+                                    .right{text-align: right; .keyboard_arrow_right()}
+                                }
+                            }
+                            .card-text{
+                                margin-top: -15px;
+                                @media only screen and (min-width: @screen-xl){margin-top: 20px; }
+                                display: grid;
+                                grid-template-columns: auto;
+                                grid-gap: 20px 10px;
+                                @media only screen and (min-width: @screen-xl){grid-template-columns: auto auto;}
+                                .left{
+                                    padding-bottom: 10px;
+                                    .location_ic{
+                                        width: 18px;
+                                        height: 16px;
+                                        @media only screen and (min-width: @screen-xl){width: 28px;height: 25px;}
+                                    }
+                                }
+                                .right{
+                                    color: @very-dark-gray;
+                                }
+                            }
+                            .card-footer{
+                                padding-left: 0px;
+                                padding-right: 0px;
+                                padding-top: 0px;
+                                @media only screen and (min-width: @screen-xl){padding-left: 0px; padding-right: 0px;}
+                                border: 0;
+                                background: transparent;
+                                mix-blend-mode: undefined;
+                                color: @dark-red;
+                                text-decoration: underline;
+                                .tags()
+                            }
+                        }
+                    }
+                }
+                .style-view{
+                    display: block;
+                    @media only screen and (min-width: @screen-sm){display: none;}
+                    @media only screen and (min-width: @screen-md){display: none;}
+                    @media only screen and (min-width: @screen-lg){display: none;}
+                    @media only screen and (min-width: @screen-xl){display: none;}
+                }
+            }
+        }
+        .block-04-des{
+            background-color: @very-light-gray;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @media only screen and (min-width: @screen-xl){padding-top: 70px; padding-bottom: 70px;}
+            .block-drop-img{
+                .grid-container{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-gap: 0px 0px;
+                    @media only screen and (min-width: @screen-sm){grid-template-columns: auto  auto; grid-gap: 0px 10px}
+                    @media only screen and (min-width: @screen-md){grid-template-columns: auto  auto; grid-gap: 0px 10px}
+                    @media only screen and (min-width: @screen-lg){grid-template-columns: auto  auto auto auto; grid-gap: 0px 10px}
+                    @media only screen and (min-width: @screen-xl){grid-template-columns: auto  auto auto auto; grid-gap: 0px 20px}
+                    .grid-item{
+                        margin-top: 20px;
+                        @media only screen and (min-width: @screen-xl){margin-top: 35px;}
+                        .select-item{
+                            cursor: pointer;
+                            position: relative;
+                            margin: 0;
+                            padding: 0;
+                            &:hover{
+                                figure{
+                                    position: relative;
+                                    display: inline-block;
+                                    margin: 0;
+                                    .actions{
+                                        display: block;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                            figure{
+                                position: relative;
+                                display: inline-block;
+                                margin: 0;
+                                    .select-icon{
+                                        display: grid;
+                                        grid-template-columns: auto auto;
+                                        grid-gap: 0 20px;
+                                        border-bottom: 8px solid transparent;
+                                        padding-bottom: 15px;
+                                        @media only screen and (min-width: @screen-xl) {padding-bottom: 39px;}
+                                        span{
+                                            padding-top: 5%; 
+                                            width: 100%;  
+                                            font-weight: bold;
+                                            font-style: normal;
+                                            font-stretch: normal;
+                                            line-height: 1.2;
+                                            letter-spacing: 1px;
+                                            text-align: left;
+                                            color: @dark-blue;
+                                            .font-20()
+                                        }
+                                        img{
+                                            padding: 0;
+                                            margin: 0;
+                                            background-repeat: no-repeat;  
+                                            width: 30px;
+                                            height: 30px;
+                                            @media only screen and (min-width: @screen-xl) { width: 44px; height: 44px;}
+                                        }
+                                        .icon-01{display: block;}
+                                        .icon-01-select{display: none; }
+                                        .icon-02{display: block;}
+                                        .icon-02-select{display: none;}
+                                        .icon-03{display: block;}
+                                        .icon-03-select{display: none;}
+                                        .icon-04{display: block;}
+                                        .icon-04-select{display: none;}
+                                        .icon-05{display: block;}
+                                        .icon-05-select{display: none; }
+                                        .icon-06{display: block; }
+                                        .icon-06-select{display: none;}
+                                        .icon-07{display: block;}
+                                        .icon-07-select{display: none;}
+                                        .icon-08{display: block;}
+                                        .icon-08-select{display: none;}
+                                    }    
+                                .actions{
+                                    display: none;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        
+                        .select-item-show{display: none;}
+                    }
+                    /*---------------------------------------------------------------------------------------*/
+                    .grid-item-select{
+                        .select-item{
+                            cursor: pointer;
+                            position: relative;
+                            margin: 0;
+                            padding: 0;
+                            &:hover{
+                                figure{
+                                    position: relative;
+                                    display: inline-block;
+                                    margin: 0;
+                                    padding: 0;
+                                    .actions{
+                                        display: none;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                            figure{
+                                position: relative;
+                                display: inline-block;
+                                margin: 0;
+                                    .select-icon{
+                                        border-bottom: 8px solid @slightly-desaturated-orange;
+                                        padding-bottom: 15px;
+                                        @media only screen and (min-width: @screen-xl) {padding-bottom: 39px;}
+                                        span{
+                                            padding-top: 5%; 
+                                            width: 100%;  
+                                            font-weight: bold;
+                                            font-style: normal;
+                                            font-stretch: normal;
+                                            line-height: 1.2;
+                                            letter-spacing: 1px;
+                                            text-align: left;
+                                            color: @slightly-desaturated-orange;
+                                            .font-20()
+                                        }
+                                        img{
+                                            padding: 0;
+                                            margin: 0;
+                                            background-repeat: no-repeat;
+                                            width: 30px;
+                                            height: 30px;
+                                            @media only screen and (min-width: @screen-xl) { width: 44px; height: 44px;}
+                                        }
+                                        .icon-01{display: none;}
+                                        .icon-01-select{display: block;}
+                                        .icon-02{display: none;}
+                                        .icon-02-select{display: block;}
+                                        .icon-03{display: none;}
+                                        .icon-03-select{display: block;}
+                                        .icon-04{display: none;}
+                                        .icon-04-select{display: block;}
+                                        .icon-05{display: none;}
+                                        .icon-05-select{display: block;}
+                                        .icon-06{display: none;}
+                                        .icon-06-select{display: block;}
+                                        .icon-07{display: none;}
+                                        .icon-07-select{display: block;}
+                                        .icon-08{display: none;}
+                                        .icon-08-select{display: block;}
+                                    }
+                                .actions{
+                                    display: none;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                }
+                            }
+                        }
+                        
+                        .select-item-show{
+                            display: block;
+                            .select-block{
+                                height: 590px;
+                                @media only screen and (min-width: 330px){height: 595px;}
+                                @media only screen and (min-width: 340px){height: 600px;}
+                                @media only screen and (min-width: 350px){height: 610px;}
+                                @media only screen and (min-width: 360px){height: 620px;}
+                                @media only screen and (min-width: 370px){height: 630px;}
+                                @media only screen and (min-width: 380px){height: 640px;}
+                                @media only screen and (min-width: 390px){height: 650px;}
+                                @media only screen and (min-width: 400px){height: 660px;}
+                                @media only screen and (min-width: 410px){height: 665px;}
+                                @media only screen and (min-width: @screen-xs)  {height: 670px;}
+                                @media only screen and (min-width: 430px)       {height: 675px;}
+                                @media only screen and (min-width: 440px)       {height: 685px;}
+                                @media only screen and (min-width: 450px)       {height: 695px;}
+                                @media only screen and (min-width: 460px)       {height: 705px;}
+                                @media only screen and (min-width: 470px)       {height: 710px;}
+                                @media only screen and (min-width: 480px)       {height: 720px;}
+                                @media only screen and (min-width: 490px)       {height: 730px;}
+                                @media only screen and (min-width: 500px)       {height: 740px;}
+                                @media only screen and (min-width: 510px)       {height: 750px;}
+                                @media only screen and (min-width: 520px)       {height: 760px;}
+                                @media only screen and (min-width: 530px)       {height: 760px;}
+                                @media only screen and (min-width: 540px)       {height: 770px;}
+                                @media only screen and (min-width: 550px)       {height: 775px;}
+                                @media only screen and (min-width: 560px)       {height: 780px;}
+                                @media only screen and (min-width: 570px)       {height: 790px;}
+                                @media only screen and (min-width: @screen-sm)       {height: 830px;}
+                                @media only screen and (min-width: 590px)            {height: 840px;}
+                                @media only screen and (min-width: 600px)            {height: 850px;}
+                                @media only screen and (min-width: 610px)            {height: 860px;}
+                                @media only screen and (min-width: 620px)            {height: 870px;}
+                                @media only screen and (min-width: 630px)            {height: 880px;}
+                                @media only screen and (min-width: 640px)            {height: 890px;}
+                                @media only screen and (min-width: 650px)            {height: 900px;}
+                                @media only screen and (min-width: 660px)            {height: 900px;}
+                                @media only screen and (min-width: 670px)            {height: 910px;}
+                                @media only screen and (min-width: 680px)            {height: 920px;}
+                                @media only screen and (min-width: 690px)            {height: 930px;}
+                                @media only screen and (min-width: 700px)            {height: 940px;}
+                                @media only screen and (min-width: 710px)            {height: 950px;}
+                                @media only screen and (min-width: 720px)            {height: 960px;}
+                                @media only screen and (min-width: 730px)            {height: 970px;}
+                                @media only screen and (min-width: 740px)            {height: 980px;}
+                                @media only screen and (min-width: 750px)            {height: 990px;}
+                                @media only screen and (min-width: 760px)            {height: 1000px;}
+                                @media only screen and (min-width: @screen-md)            {height: 390px;}
+                                @media only screen and (min-width: 790px)                 {height: 395px;}
+                                @media only screen and (min-width: 800px)                 {height: 400px;}
+                                @media only screen and (min-width: 850px)                 {height: 410px;}
+                                @media only screen and (min-width: 890px)                 {height: 415px;}
+                                @media only screen and (min-width: 920px)                 {height: 420px;}
+                                @media only screen and (min-width: 960px)                 {height: 430px;}
+                                @media only screen and (min-width: @screen-lg)               {height: 455px;}
+                                @media only screen and (min-width: 1030px)                   {height: 460px;}
+                                @media only screen and (min-width: 1060px)                   {height: 470px;}
+                                @media only screen and (min-width: 1100px)                   {height: 485px;}
+                                @media only screen and (min-width: 1150px)                   {height: 495px;}
+                                @media only screen and (min-width: @screen-xl)                   {height: 515px;}
+                                @media only screen and (min-width: 1250px)                       {height: 525px;}
+                                @media only screen and (min-width: 1300px)                       {height: 535px;}
+                                @media only screen and (min-width: 1350px)                       {height: 550px;}
+                                @media only screen and (min-width: 1400px)                       {height: 560px;}
+                                @media only screen and (min-width: 1450px)                       {height: 570px;}
+                                @media only screen and (min-width: 1500px)                       {height: 580px;}
+                                @media only screen and (min-width: 1550px)                       {height: 590px;}
+                                @media only screen and (min-width: 1600px)                       {height: 600px;}
+                                @media only screen and (min-width: 1650px)                       {height: 610px;}
+                                @media only screen and (min-width: 1700px)                       {height: 620px;}
+                                @media only screen and (min-width: 1750px)                       {height: 630px;}
+                                @media only screen and (min-width: 1800px)                       {height: 640px;}
+                                @media only screen and (min-width: 1850px)                       {height: 650px;}
+                                @media only screen and (min-width: 1900px)                       {height: 630px;}
+                                @media only screen and (min-width: 1950px)                       {height: 640px;}
+                                @media only screen and (min-width: 2000px)                       {height: 650px;}
+                                .select-detail-item {
+                                    position: absolute;
+                                    background: white;
+                                    left: 0;
+                                    right: 0;
+                                    padding: 0;
+                                    height: 590px;
+                                    @media only screen and (min-width: 330px){height: 595px;}
+                                    @media only screen and (min-width: 340px){height: 600px;}
+                                    @media only screen and (min-width: 350px){height: 610px;}
+                                    @media only screen and (min-width: 360px){height: 620px;}
+                                    @media only screen and (min-width: 370px){height: 630px;}
+                                    @media only screen and (min-width: 380px){height: 640px;}
+                                    @media only screen and (min-width: 390px){height: 650px;}
+                                    @media only screen and (min-width: 400px){height: 660px;}
+                                    @media only screen and (min-width: 410px){height: 665px;}
+                                    @media only screen and (min-width: @screen-xs)  {height: 670px;}
+                                    @media only screen and (min-width: 430px)       {height: 675px;}
+                                    @media only screen and (min-width: 440px)       {height: 685px;}
+                                    @media only screen and (min-width: 450px)       {height: 695px;}
+                                    @media only screen and (min-width: 460px)       {height: 705px;}
+                                    @media only screen and (min-width: 470px)       {height: 710px;}
+                                    @media only screen and (min-width: 480px)       {height: 720px;}
+                                    @media only screen and (min-width: 490px)       {height: 730px;}
+                                    @media only screen and (min-width: 500px)       {height: 740px;}
+                                    @media only screen and (min-width: 510px)       {height: 750px;}
+                                    @media only screen and (min-width: 520px)       {height: 760px;}
+                                    @media only screen and (min-width: 530px)       {height: 760px;}
+                                    @media only screen and (min-width: 540px)       {height: 770px;}
+                                    @media only screen and (min-width: 550px)       {height: 775px;}
+                                    @media only screen and (min-width: 560px)       {height: 780px;}
+                                    @media only screen and (min-width: 570px)       {height: 790px;}
+                                    @media only screen and (min-width: @screen-sm)       {height: 830px;}
+                                    @media only screen and (min-width: 590px)            {height: 840px;}
+                                    @media only screen and (min-width: 600px)            {height: 850px;}
+                                    @media only screen and (min-width: 610px)            {height: 860px;}
+                                    @media only screen and (min-width: 620px)            {height: 870px;}
+                                    @media only screen and (min-width: 630px)            {height: 880px;}
+                                    @media only screen and (min-width: 640px)            {height: 890px;}
+                                    @media only screen and (min-width: 650px)            {height: 900px;}
+                                    @media only screen and (min-width: 660px)            {height: 900px;}
+                                    @media only screen and (min-width: 670px)            {height: 910px;}
+                                    @media only screen and (min-width: 680px)            {height: 920px;}
+                                    @media only screen and (min-width: 690px)            {height: 930px;}
+                                    @media only screen and (min-width: 700px)            {height: 940px;}
+                                    @media only screen and (min-width: 710px)            {height: 950px;}
+                                    @media only screen and (min-width: 720px)            {height: 960px;}
+                                    @media only screen and (min-width: 730px)            {height: 970px;}
+                                    @media only screen and (min-width: 740px)            {height: 980px;}
+                                    @media only screen and (min-width: 750px)            {height: 990px;}
+                                    @media only screen and (min-width: 760px)            {height: 1000px;}
+                                    @media only screen and (min-width: @screen-md)            {height: 390px;}
+                                    @media only screen and (min-width: 790px)                 {height: 395px;}
+                                    @media only screen and (min-width: 800px)                 {height: 400px;}
+                                    @media only screen and (min-width: 850px)                 {height: 410px;}
+                                    @media only screen and (min-width: 890px)                 {height: 415px;}
+                                    @media only screen and (min-width: 920px)                 {height: 420px;}
+                                    @media only screen and (min-width: 960px)                 {height: 430px;}
+                                    @media only screen and (min-width: @screen-lg)               {height: 455px;}
+                                    @media only screen and (min-width: 1030px)                   {height: 460px;}
+                                    @media only screen and (min-width: 1060px)                   {height: 470px;}
+                                    @media only screen and (min-width: 1100px)                   {height: 485px;}
+                                    @media only screen and (min-width: 1150px)                   {height: 495px;}
+                                    @media only screen and (min-width: @screen-xl)                   {height: 515px;}
+                                    @media only screen and (min-width: 1250px)                       {height: 525px;}
+                                    @media only screen and (min-width: 1300px)                       {height: 535px;}
+                                    @media only screen and (min-width: 1350px)                       {height: 550px;}
+                                    @media only screen and (min-width: 1400px)                       {height: 560px;}
+                                    @media only screen and (min-width: 1450px)                       {height: 570px;}
+                                    @media only screen and (min-width: 1500px)                       {height: 580px;}
+                                    @media only screen and (min-width: 1550px)                       {height: 590px;}
+                                    @media only screen and (min-width: 1600px)                       {height: 600px;}
+                                    @media only screen and (min-width: 1650px)                       {height: 610px;}
+                                    @media only screen and (min-width: 1700px)                       {height: 620px;}
+                                    @media only screen and (min-width: 1750px)                       {height: 630px;}
+                                    @media only screen and (min-width: 1800px)                       {height: 640px;}
+                                    @media only screen and (min-width: 1850px)                       {height: 650px;}
+                                    @media only screen and (min-width: 1900px)                       {height: 630px;}
+                                    @media only screen and (min-width: 1950px)                       {height: 640px;}
+                                    @media only screen and (min-width: 2000px)                       {height: 650px;}
+                                    .grid-container{
+                                        padding-top: 30px;
+                                        @media only screen and (min-width: @screen-xl) {padding-top: 39px;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*---------------------------------------------------------------------------------------*/
+                    /*---------------------------------------------------------------------------------------*/
+                    /*---------------------------------------------------------------------------------------*/
+                    .grid-item-select{
+                        .select-item-show{
+                            .select-block{
+                                .select-detail-item{
+                                    .grid-container{
+                                        display: grid;
+                                        grid-template-columns:  48% 48%;
+                                        grid-gap: 10px 10px;
+                                        @media only screen and (min-width: @screen-xs){grid-template-columns:  49% 49%; grid-gap: 10px 10px;}
+                                        @media only screen and (min-width: @screen-sm){grid-template-columns:  50% 50%; grid-gap: 20px 20px;}
+                                        @media only screen and (min-width: @screen-md){grid-template-columns:  22% 22% 22% 22%; grid-gap: 20px 20px;}
+                                        @media only screen and (min-width: @screen-lg){grid-template-columns:  22% 22% 22% 22%; grid-gap: 24px 24px;}
+                                        @media only screen and (min-width: @screen-xl){grid-template-columns:  22% 22% 22% 22%; grid-gap: 30px 30px;}
+                                        .block-item{
+                                            border: solid 1px @desert;
+                                            .block-item-head{
+                                                margin-top: -1px;
+                                                margin-left: -1px;
+                                                margin-right: -1px;
+                                            }
+                                            .block-item-body{
+                                                border-top: solid 1px @desert;
+                                                padding: 10px;
+                                                .item-title{
+                                                    position: relative;
+                                                    .left{
+                                                        font-weight: bold;
+                                                        font-style: normal;
+                                                        font-stretch: normal;
+                                                        line-height: normal;
+                                                        letter-spacing: normal;
+                                                        text-align: left;
+                                                        color: @dark-red;
+                                                        .font-20()
+                                                    }
+                                                    .right{
+                                                        .keyboard_arrow_right()
+                                                    }
+                                                }
+                                                .item-body{
+                                                    h2{
+                                                        color: @black; 
+                                                        width: 80%;
+                                                        @media only screen and (min-width: 530px){ width: 70%;}
+                                                        @media only screen and (min-width: 660px){ width: 60%;}
+                                                        @media only screen and (min-width: 746px){ width: 50%;}
+                                                        @media only screen and (min-width: 760px){ width: 50%;}
+                                                        @media only screen and (min-width: @screen-md){ width: 80%;}
+                                                        @media only screen and (min-width: 1660px){ width: 70%;}
+                                                    }
+                                                    p{color: @very-dark-gray;}
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*---------------------------------------------------------------------------------------*/
+                    /*---------------------------------------------------------------------------------------*/
+                    /*---------------------------------------------------------------------------------------*/
+                }
+            }
+        }
+    }
+}

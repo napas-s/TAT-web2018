@@ -1,0 +1,89 @@
+.block-content{
+    .body-content{
+        .tab-utilities{
+            .tab-button-outer{
+                display: none;
+                @media only screen and (min-width: @screen-sm){display: none;}
+                @media only screen and (min-width: @screen-md){display: block;}
+                @media only screen and (min-width: @screen-lg){display: block;}
+                @media only screen and (min-width: @screen-xl){display: block;}
+                .nav,.nav-tabs{
+                    .nav-item{
+                        margin-right: 3.2%;
+                        @media only screen and (min-width: @screen-lg){ margin-right: 4%; }
+                    }
+                }
+            }
+            .tab-select-outer{
+                display: unset;
+                @media only screen and (min-width: @screen-sm){display: unset;}
+                @media only screen and (min-width: @screen-md){display: none;}
+                @media only screen and (min-width: @screen-lg){display: none;}
+                @media only screen and (min-width: @screen-xl){display: none;}
+                select{
+                    height: 40px;
+                }
+            }
+        }
+        .bg-tab{
+            background-color: @very-light-gray;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            @media only screen and (min-width: @screen-lg){ padding-top: 40px; padding-bottom: 80px;}
+            @media only screen and (min-width: @screen-xl){ padding-top: 40px; padding-bottom: 80px;}
+            .tab-body-utilities{
+                .tab-content-utilities.active{
+                    .collapse-block{
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: dashed 1px @slightly-desaturated-orange;
+                        @media only screen and (min-width: @screen-md){ padding-top: 30px; padding-bottom: 30px; border-bottom: dashed 1.1px @slightly-desaturated-orange;}
+                        @media only screen and (min-width: @screen-lg){ padding-top: 30px; padding-bottom: 30px; border-bottom: dashed 1.6px @slightly-desaturated-orange;}
+                        @media only screen and (min-width: @screen-xl){ padding-top: 30px; padding-bottom: 30px; border-bottom: dashed 1.8px @slightly-desaturated-orange;}
+                        .cols-head{
+                            font-weight: bold;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: 0.2px;
+                            text-align: left;
+                            text-transform: uppercase;
+                            text-decoration: unset;
+                            color: @dark-blue;
+                            .font-16()
+                        }
+                        .cols-body{
+                            padding-top: 20px;
+                            padding-bottom: 10px;
+                            @media only screen and (min-width: @screen-xl){padding-top: 30px; padding-bottom: 30px;}
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: 0.2px;
+                            text-align: left;
+                            color: @black;
+                            .font-16()
+                        }
+                        [data-toggle="collapse"]:after {
+                            display: inline-block;
+                                display: inline-block;
+                                font: normal normal normal 14px/1 FontAwesome;
+                                font-size: inherit;
+                                text-rendering: auto;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                              content: "\f054";
+                              transform: rotate(90deg) ;
+                              transition: all linear 0.25s;
+                              float: right;
+                        }   
+                        [data-toggle="collapse"].collapsed:after {
+                            transform: rotate(-90deg) ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

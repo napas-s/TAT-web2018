@@ -1,0 +1,180 @@
+.block-footer{
+    background: url('../images/footer/pattern-bg.jpg');
+    background-size: cover;
+    .block-01{
+        position: relative;
+        .box-01{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            @media only screen and (min-width: @screen-lg){padding-top: 40px; padding-bottom: 40px;}
+            @media only screen and (min-width: @screen-xl){padding-top: 40px; padding-bottom: 40px;}
+            display: grid;
+            .box-left{
+                float: left;
+                width: 56%;
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 0px;
+                @media only screen and (min-width: @screen-lg) {grid-template-columns: 38% 1% 38% 1% 38% 1%;  grid-gap: 5px; width: 50%;}
+                @media only screen and (min-width: @screen-xl) {grid-template-columns: 38% 1% 38% 1% 38% 1%;  grid-gap: 5px; width: 50%;}
+                @media only screen and (min-width: 1300px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1400px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1500px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1600px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1700px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1800px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+                @media only screen and (min-width: 1900px)     {grid-template-columns: 36% 2% 36% 2% 36% 2%;  grid-gap: 10px; width: 50%;}
+            }
+            .box-right{
+                float: right;
+                width: 44%;
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 0px;
+                @media only screen and (min-width: @screen-lg) {grid-template-columns: 48% 2% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: @screen-xl) {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1300px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1400px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1500px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1600px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1700px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1800px)     {grid-template-columns: 50% 4% auto; grid-gap: 5px; width: 37.5%;}
+                @media only screen and (min-width: 1900px)     {grid-template-columns: 42% 4% auto; grid-gap: 10px; width: 37.5%;}
+            }
+            .divider {
+                display: none;
+                @media only screen and (min-width: @screen-lg) { 
+                    display: block;
+                    width: 1px;
+                    height: 300px;
+                    mix-blend-mode: undefined;
+                    background-image: radial-gradient(circle at 0 0, @desert, @sepia), linear-gradient(to left, @sepia, @desert 50%, @sepia);
+                }
+                @media only screen and (min-width: @screen-xl) {
+                    display: block;
+                    width: 1px;
+                    height: 300px;
+                    mix-blend-mode: undefined;
+                    background-image: radial-gradient(circle at 0 0, @desert, @sepia), linear-gradient(to left, @sepia, @desert 50%, @sepia);
+                }
+            }
+            /*--------------------------------------------*/
+            ul.nav{
+                li{
+                    .nav-link{
+                        width: 100%;
+                        color: @milk-chocolate;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        .st-text-footer()
+                    }
+                }
+            }
+            /*--------------------------------------------*/
+            .sidebar-left,.sidebar-right{
+                margin-bottom: -5px;
+                .nav-link{
+                    width: 100%;
+                    color: @milk-chocolate;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    i{
+                        display: unset;
+                        padding: 0;
+                        margin-left: 10px;
+                        @media only screen and (min-width: @screen-lg) {display: none;}
+                        @media only screen and (min-width: @screen-xl) {display: none;}
+                    }
+                    .st-text-footer()
+                }
+                .navbar-nav{
+                    margin-left: 20px;
+                    @media only screen and (min-width: @screen-lg){margin-left: 20%;}
+                    @media only screen and (min-width: @screen-xl){margin-left: 20%;}
+                    .nav-item{
+                        .nav-link{
+                            width: 100%;
+                            color: @milk-chocolate;
+                            font-weight: normal;
+                            text-transform: none;
+                            .st-text-de-footer()
+                        }
+                    }
+                }
+                
+            }
+            /*--------------------------------------------*/
+
+            /*============================================*/
+            .sidebar-nav{
+                #navCheck-left{display:none}
+                #navCheck-left:not(:checked)~.sidebar-nav-button-left{display:none}
+                @media only screen and (min-width:@screen-lg){
+                    #navCheck-left:not(:checked)~.sidebar-nav-button-left{display:unset}
+                }
+                @media only screen and (min-width:@screen-xl){
+                    #navCheck-left:not(:checked)~.sidebar-nav-button-left{display:unset}
+                }
+                #navCheck-left:checked~.sidebar-nav-button-left{display:block}
+            }
+            /*--------------------------------------------*/
+            .sidebar-right{
+                #navCheck-right{display:none}
+                #navCheck-right:not(:checked)~.sidebar-nav-button-right{display:none}
+                @media only screen and (min-width:@screen-lg){
+                    #navCheck-right:not(:checked)~.sidebar-nav-button-right{display:unset}
+                }
+                @media only screen and (min-width:@screen-xl){
+                    #navCheck-right:not(:checked)~.sidebar-nav-button-right{display:unset}
+                }
+                #navCheck-right:checked~.sidebar-nav-button-right{display:block}
+            }
+            /*============================================*/
+
+        }
+        .box-02{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            @media only screen and (min-width: @screen-md) {margin-top: 10px; margin-bottom: 20px;}
+            @media only screen and (min-width: @screen-lg) {margin-top: 40px; margin-bottom: 40px;}
+            @media only screen and (min-width: @screen-xl) {margin-top: 40px; margin-bottom: 40px;}
+            .TAT-logo{
+                margin-bottom: 3%;
+                width: 45px;
+                height: 45px;
+                @media only screen and (min-width: @screen-sm) {width: 55px; height: 55px;}
+                @media only screen and (min-width: @screen-md) {width: 73px; height: 73px;}
+                @media only screen and (min-width: @screen-xl) {width: 73px; height: 73px;}
+                object-fit: contain;
+                mix-blend-mode: undefined;
+            }
+            .box-text{
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: 0.2px;
+                text-align: left;
+                color: @milk-chocolate;
+                .active {font-weight: bold;}
+                .st-text-sa()
+            }
+        }
+    }
+    .block-02{
+        background-color: @milk-chocolate;
+        padding: 1%;
+        .nav-link{
+            font-weight: bold;
+            color: @slightly-desaturated-orange;
+            .st-text()
+        }
+        .left{text-align: left;}
+        .right{text-align: right;}
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto;
+            @media only screen and (min-width: 1350px) {grid-template-columns: auto auto auto auto;}
+        }
+    }
+}

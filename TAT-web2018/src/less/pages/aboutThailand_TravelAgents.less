@@ -1,0 +1,39 @@
+.block-content{
+    .body-content{
+        .block-table{
+            margin-top: 3%;
+            column-rule: 1px solid @light-gray;
+            column-count: 1;
+            @media only screen and (min-width: @screen-sm){column-count: 2;}
+            @media only screen and (min-width: @screen-md){column-count: 2;}
+            @media only screen and (min-width: @screen-lg){column-count: 4;}
+            @media only screen and (min-width: @screen-xl){column-count: 4;}
+            .bl-ta-hover{
+                padding: 10px;
+                display: grid;
+                grid-template-columns: auto auto;
+                .left{text-align: left;}
+                .right{text-align: right;}
+                color: @black;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 1.1px;
+                font-size: 12px;
+                @media only screen and (min-width: @screen-xs) {font-size: 12px;}
+                @media only screen and (min-width: @screen-sm) {font-size: 14px;}
+                @media only screen and (min-width: @screen-md) {font-size: 14px;}
+                @media only screen and (min-width: @screen-lg) {font-size: 13px;}
+                @media only screen and (min-width: 1010px)     {font-size: 14px;}
+                @media only screen and (min-width: @screen-xl) {font-size: 16px;}
+                &:hover{
+                    background: @dark-blue;
+                    color: white;
+                }
+                
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,362 @@
+doctype html
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Bootstrap CSS
+    link(rel="stylesheet" href="../src/assets/vendor/bootstrap-4.1.0-dist/css/bootstrap.min.css")
+    //css
+    link(rel="stylesheet", href="../src/css/styles.css")
+    title Multimedia_Podcast
+  body
+    // navigate bar
+    include _components/nav.pug
+    // banner
+    section.block-banner
+      img.abt_HeroBanner(src="../src/images/banner/multimedia-banner.jpg" srcset="../src/images/banner/multimedia-bannerr@2x.jpg 2x,../src/images/banner/multimedia-banner@3x.jpg 3x")
+    // content
+    article.block-content
+      .head-content
+          .menu-nav
+            ul.nav
+              li.nav-item
+                a.nav-link(href="#") home 
+              li.nav-item
+                .nav-link
+                  i.fa.fa-angle-double-right
+              li.nav-item
+                a.nav-link.sub-link(href="#") MULTIMEDIA
+              li.nav-item
+                .nav-link
+                  i.fa.fa-angle-double-right
+              li.nav-item
+                a.nav-link.active(href="#") PODCAST
+          .head-sub MULTIMEDIA
+          .head-title PODCAST
+            i.fa.fa-podcast
+          .head-body
+            | These E-Cards showcase some of Thailand’s most picturesque natural and cultural attractions and activities.  Select from the featured E-Cards pictured below or use the search box on the left to find an E-Card picturing your favorite Thai destination, attraction, or activity and share it with someone you know!
+            .style-view VIEW ALL 
+              i.fa.fa-plus-circle
+      .body-content
+        .block-search
+          .Rectangle-651
+            .Rectangle-651
+              .style-head-search search
+              .show-or-hide
+                  .row
+                    .col-sm-6.col-md-4.col-lg-4.col-xl-4#hide
+                      .form-group
+                        h2 Destination
+                        select.form-control
+                          option All
+                    .col-sm-6.col-md-4.col-lg-4.col-xl-4#hide
+                      .form-group
+                        h2 Category
+                        select.form-control
+                          option All
+                    .col-md-4.col-lg-4.col-xl-4#hide
+                      
+                    .col-sm-12.col-md-8.col-lg-8.col-xl-8#hide
+                      .form-group
+                        h2 Keywords
+                        #custom-search-input
+                          .input-group
+                            input.search-query.form-control(type='text', placeholder='Keywords')
+                            span.input-group-btn
+                              button(type='button', disabled='')
+                                span.fa.fa-search
+                    .col-sm-12.col-md-4.col-lg-4.col-xl-4.block-pd
+                      button.btn-show-hide 
+                        i.fa.fa-search 
+                        | SEARCH
+        .block-tab
+          .containers
+            .tab-podcast
+              .tab-button-outer
+                ul.nav.nav-tabs#tab-button-podcast
+                  li.nav-item
+                    a.nav-link.active(data-toggle='tab', href='#tabPODCASTS-01') FEATURED PODCASTS
+                  li.nav-item
+                    a.nav-link(data-toggle='tab', href='#tabPODCASTS-02') LASTEST PODCASTS
+              .tab-select-outer
+                select#tab-select-podcast
+                  option(value='#tabPODCASTS-01') FEATURED PODCASTS
+                  option(value='#tabPODCASTS-02') LASTEST PODCASTS
+          .bg-tab
+            .containers
+              .tab-body-podcast
+                #tabPODCASTS-01.tab-content-podcast.active
+                  .grid-container
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                  button.btn-play-podcast 
+                                    span.fa.fa-play-circle
+                                    | PLAY
+                                  button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-airline.jpg', srcset='../src/images/podcast/abt-travel-airline@2x.jpg 2x,../src/images/podcast/abt-travel-airline@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD
+  
+                #tabPODCASTS-02.tab-content-podcast
+                  .grid-container
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body
+                               p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD
+                    .grid-item 
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast DOWNLOAD
+                    .grid-item   
+                      .card-podcast
+                        .podcast-box
+                          .card-img
+                                img(src='../src/images/podcast/abt-travel-bus.jpg', srcset='../src/images/podcast/abt-travel-bus@2x.jpg 2x,../src/images/podcast/abt-travel-bus@3x.jpg 3x')
+                          .card-body
+                            .card-title
+                              span.left 
+                                h2 Pattaya - Restaurants and Nightlife
+                              span.right
+                                i.fa.fa-angle-right
+                            .card-body 
+                              p Restuarants and Nightlife
+                            .card-footers
+                              .block-button
+                                button.btn-play-podcast 
+                                  span.fa.fa-play-circle
+                                  | PLAY
+                                button.btn-dowload-podcast   DOWNLOAD  
+            
+    //footer
+    include _components/footer.pug
+
+    // Optional JavaScript
+    script(type='text/javascript', src="../src/js/script.js")  
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/jquery-3.3.1.slim.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/popper.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/bootstrap.min.js")  
+    // Option Select Tab
+    script.
+      $(function() {
+      var $tabButtonItem = $('#tab-button-podcast li'),
+        $tabSelect = $('#tab-select-podcast'),
+        $tabContents = $('.tab-content-podcast'),
+        activeClass = 'is-active';
+        $tabButtonItem.first().addClass(activeClass);
+        $tabContents.not(':first').hide();
+        $tabButtonItem.find('a').on('click', function(e) {
+      var target = $(this).attr('href');
+        $tabButtonItem.removeClass(activeClass);
+        $(this).parent().addClass(activeClass);
+        $tabSelect.val(target);
+        $tabContents.hide();
+        $(target).show();
+        e.preventDefault();
+        });
+      $tabSelect.on('change', function() {
+      var target = $(this).val(),
+        targetSelectNum = $(this).prop('selectedIndex');
+        $tabButtonItem.removeClass(activeClass);
+        $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+        $tabContents.hide();
+        $(target).show();
+        });
+        });
+
+
+

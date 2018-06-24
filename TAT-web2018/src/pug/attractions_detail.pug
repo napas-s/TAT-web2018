@@ -1,0 +1,612 @@
+doctype html
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    // Bootstrap CSS
+    link(rel="stylesheet" href="../src/assets/vendor/bootstrap-4.1.0-dist/css/bootstrap.min.css")
+    //css
+    link(rel="stylesheet", href="../src/css/styles.css")
+    title Attractions_detail
+  body
+    // navigate bar
+    include _components/nav.pug
+        
+    // content
+    article.block-content
+      .head-content
+        .menu-nav
+          ul.nav
+            li.nav-item
+              a.nav-link(href="#") home 
+            li.nav-item
+              .nav-link
+                i.fa.fa-angle-double-right
+            li.nav-item
+              a.nav-link.sub-link(href="#") attractions
+            li.nav-item
+              .nav-link
+                i.fa.fa-angle-double-right
+            li.nav-item
+              a.nav-link.active(href="#") THE GRand palace
+        .head-sub attractions
+        .head-title THE GRand palace
+      .body-content
+        .block-01-ats-det
+          .containers
+            img(src="../src/images/banner/attractions_detail-banner.jpg")
+            .up-icon
+              .block-01-triagle
+                .up-triangle-top
+                .up-triangle-bottom
+              .block-01-triagle
+                .up-triangle-top
+                .up-triangle-bottom
+              .block-01-triagle
+                .up-triangle-top
+                .up-triangle-bottom
+              .block-02-triagle
+                .up-triangle-top
+                .up-triangle-bottom
+              .block-01-triagle
+                .up-triangle-top
+                .up-triangle-bottom
+              
+        .block-02-ats-det
+          img.Vector-Smart-Object-left(src="../src/images/vectors/Vector-Smart-Object-left.png")
+          img.Vector-Smart-Object-right(src="../src/images/vectors/Vector-Smart-Object-right.png")
+          .containers
+            .style-head CONTACT DETAILS
+            .contents
+              .active ADDRESS : 
+                span.style-body Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok
+              p
+              .active 
+                i.fa.fa-phone 
+                | Telephone : 
+                span.style-body +66 2623 5500
+              p
+              .active OPERATING DAY : 
+                span.style-body All Day
+              p
+              .active OPERATING TIME : 
+                span.style-body All Day
+              p
+              .active 
+                i.fa.fa-envelope 
+                | : 
+                span.style-body Send Inquiry
+            .footer
+              .style-globe
+                i.fa.fa-globe 
+                | VISIT WEBSITE    
+            .box-planner 
+              .row
+                .col-12.col-md-12.col-lg-3.col-xl-3
+                  .pads-planner.pads-planner-ht
+                    button.btn-planner 
+                      i.fa.fa-plus-circle   
+                      | ADD TO PLANNER
+                .col-12.col-md-12.col-lg-9.col-xl-9
+                  .box-show
+                    .row.no-gutters
+                        .col-auto.style-text Share to :
+                        .col-auto.pd-t
+                          button.btn-facebook 
+                            i.fa.fa-facebook-official 
+                            | Facebook
+                        .col-auto.pd-t
+                          button.btn-twitter
+                            i.fa.fa-twitter
+                            | Twitter
+                        .col-auto.pd-t
+                          button.btn-google
+                            i.fa.fa-google-plus-square
+                            | google+
+                        .col-auto.pd-t
+                          button.btn-email
+                            i.fa.fa-envelope
+                            | E-mails
+                  .box-model
+                    .pads-planner
+                      button.btn-share(data-toggle="modal" data-target="#myModal-share" href="#myModal-share")
+                        i.fa.fa-share   
+                        | SHARE
+                    // The Modal
+                    #myModal-share.modal
+                        .modal-dialog
+                          .modal-content
+                            // Modal Header
+                            .modal-header
+                              button.btn-close-model(type='button', data-dismiss='modal') X CLOSE
+                            // Modal body
+                            .modal-body
+                              .row
+                                .col-12.style-text Share to :
+                                .col-12 
+                                  button.btn-facebook 
+                                    i.fa.fa-facebook-official 
+                                    | Facebook
+                                .col-12
+                                  button.btn-twitter
+                                    i.fa.fa-twitter
+                                    | Twitter
+                                .col-12
+                                  button.btn-google
+                                    i.fa.fa-google-plus-square
+                                    | google+
+                                .col-12
+                                  button.btn-email
+                                    i.fa.fa-envelope-o
+                                    | E-mails
+        .block-03-ats-det
+          .containers
+            .style-head ATTRACTION DETAILS
+            .style-body
+              p
+              | Located at the heart of Bangkok, Thailand, the Grand Palace was a former residence for King Rama I to King Rama V of the Rattanakosin Kingdom. Today, the place is used for hosting royal ceremonies and 
+              p
+              | welcoming the king’s guests, State guests, and other foreign dignitaries. It is also a place where remains of kings and high-ranked members of the royal family were situated before cremation.
+              p
+              | The Grand Palace is divided into two main zones, which are the Temple of the Emerald Buddha and the royal residence. The latter is divided into three major areas: the Outer Court, the Middle Court, and the Inner Court.
+              p
+              | The Outer Court starts from Wiset Chai Si Gate to Phiman Chai Si Gate and includes the inner walls of the Grand Palace. It is now the location of several state offices such as the Bureau of the Royal Household, Office of His Majesty’s Principal Private Secretary, and the Office of the Royal Institute. 
+              p
+              | The Middle Court starts from Phiman Chai Si Gate to Sanam Ratchakit Gate. The area is where significant royal ceremonies are held such as the Royal Coronation and the Royal Ceremony of Coronation Day. 
+              p
+              | Situated in the Middle Court area are the Phra Maha Monthien Buildings, the Chakri Maha Prasat 
+              p
+              | Buildings, the Phra Maha Prasat Buildings, and the Siwalai Gardens quarter.
+              p
+              | The Inner Court starts from Sanam Ratchakit Gate to Thaew Teng, the row houses which were formerly palace walls during the reign of King Rama I. The southern area of the Inner Court was then a female-only zone; no man except for the king was allowed to get into the area, where the queens, consorts, consort mothers, and daughters of the king lived together with many ladies-in-waiting and servants. The area no longer served as a residence nowadays.
+              p
+              .text-style-1 Tips
+              p
+              | •	Please dress properly in black or white to show condolence to the late King Rama IX.
+              p
+              | •	Stood inside the Grand Palace area is another Bangkok attraction called the Pavilion of Regalia, Royal Decorations and Coins, where Thai coins and regalia are on display. 
+            .style-view READ MORE 
+              i.fa.fa-angle-up
+        .block-04-ats-det
+          .containers
+            .tabs-ats-det
+              .tab-button-outer
+                ul.nav.nav-tabs#tab-button-ats-det
+                  li.nav-item
+                    a.nav-link.active(data-toggle="tab" href='#review') REVIew
+                  li.nav-item
+                    a.nav-link(data-toggle="tab" href='#nearby') nearby
+                  li.nav-item
+                    a.nav-link(data-toggle="tab" href='#facility') facility
+                  li.nav-item
+                    a.nav-link(data-toggle="tab" href='#award') award
+                  li.nav-item
+                    a.nav-link(data-toggle="tab" href='#remark') remark
+                  li.nav-item
+                    a.nav-link(data-toggle="tab" href='#blog') blog
+              .tab-select-outer
+                select#tab-select-ats-det
+                  option(value='#review') review
+                  option(value='#nearby') nearby
+                  option(value='#facility') facility
+                  option(value='#award') award
+                  option(value='#remark') remark
+                  option(value='#blog') blog
+              .tab-body-ats-det
+                #review.tab-content-ats-det.active
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                #nearby.tab-content-ats-det
+                  h2 Nearby
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                #facility.tab-content-ats-det
+                  h2 Facility
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B     
+                #award.tab-content-ats-det
+                  h2 Award
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                #remark.tab-content-ats-det
+                  h2 Remark
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                #blog.tab-content-ats-det
+                  h2 Blog
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-home
+                      .col-auto
+                        span.style-head-tab accommodation
+                    .style-body-tab
+                      | •	Accommodation A
+                      br
+                      | •	Accommodation B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-male
+                      .col-auto
+                        span.style-head-tab Normal
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+                  br
+                  .box
+                    .row.no-gutters
+                      .col-auto
+                        .Ellipse-1
+                          center
+                            i.fa.fa-wheelchair
+                      .col-auto
+                        span.style-head-tab disability
+                    .style-body-tab
+                      | •	Content A
+                      br
+                      | •	Content B
+        .block-wave.line-height
+          .grey_wave_top
+          .bg-wave
+            .block-05-ats-des
+                .containers
+                  .style-head how to go
+                  .tabs-ats-det-ht
+                    .tab-button-outer
+                      ul.nav.nav-tabs#tab-button-ats-det-ht
+                        li.nav-item
+                          a.nav-link.active(data-toggle="tab" href='#car-01') 
+                            i.fa.fa-car
+                            | by car
+                        li.nav-item
+                          a.nav-link(data-toggle="tab" href='#bus-02') 
+                            i.fa.fa-bus
+                            | by bus
+                        li.nav-item
+                          a.nav-link(data-toggle="tab" href='#train-03') 
+                            i.fa.fa-train
+                            | by train
+                        li.nav-item
+                          a.nav-link(data-toggle="tab" href='#plane-04') 
+                            i.fa.fa-fighter-jet 
+                            | by plane
+                        li.nav-item
+                          a.nav-link(data-toggle="tab" href='#other-05') 
+                            i.fa.fa-street-view
+                            | by other
+                    .tab-select-outer
+                      select#tab-select-ats-det-ht
+                        option(value='#car-01') &#xf1b9;  &nbsp; &nbsp;
+                          | by car
+                        option(value='#bus-02') &#xf207;  &nbsp; &nbsp;
+                          | by bus
+                        option(value='#train-03') &#xf238;  &nbsp; &nbsp;
+                          | by train
+                        option(value='#plane-04') &#xf0fb;  &nbsp; &nbsp;
+                          | by plane
+                        option(value='#other-05') &#xf21d;  &nbsp; &nbsp;
+                          | by other
+                    .tab-body-ats-det-ht
+                      #car-01.tab-content-ats-det-ht.active
+                        p
+                        | From Bangkok there are ordinary, 2nd class, and 1st class air-conditioned busses leaving throughout the day from Bangkok's Northern Bus Terminal (Mo Chit 2) for Chiang Mai (8.00 a.m. to 09.00 p.m.) Call 02 936 3600, 02 936 2852, and 02 937 8055 for an updated bus timetable.
+                        p
+                        | Private buses, which can be conveniently booked in tourist centers in Bangkok, are also available. However, the public busses from the Northern Bus Terminal are generally more reliable. The journey takes approximately 10-12 hours, depending on traffic.
+                        p
+                        | From other provinces, including Mae Sai, Chiang Saen, Chiang Rai, Nan, Phayao, Phrae, Lampang, Lamphun, Phitsanulok, Sukhothai, Mae Hong Son, Mae Sot, Mae Sariang, Khon Kaen, Nakhon Ratchasima (Khorat), and Udon Thani, there are direct busses that service the Chiang Mai Arcade Bus Station. Contact tel: 0 5324 2664 for an updated bus timetable.
+                      #bus-02.tab-content-ats-det-ht
+                        p
+                        | From Bangkok there are ordinary, 2nd class, and 1st class air-conditioned busses leaving throughout the day from Bangkok's Northern Bus Terminal (Mo Chit 2) for Chiang Mai (8.00 a.m. to 09.00 p.m.) Call 02 936 3600, 02 936 2852, and 02 937 8055 for an updated bus timetable.
+                      #train-03.tab-content-ats-det-ht
+                        p
+                        | Private buses, which can be conveniently booked in tourist centers in Bangkok, are also available. However, the public busses from the Northern Bus Terminal are generally more reliable. The journey takes approximately 10-12 hours, depending on traffic.
+                      #plane-04.tab-content-ats-det-ht
+                        p
+                        | From other provinces, including Mae Sai, Chiang Saen, Chiang Rai, Nan, Phayao, Phrae, Lampang, Lamphun, Phitsanulok, Sukhothai, Mae Hong Son, Mae Sot, Mae Sariang, Khon Kaen, Nakhon Ratchasima (Khorat), and Udon Thani, there are direct busses that service the Chiang Mai Arcade Bus Station. Contact tel: 0 5324 2664 for an updated bus timetable.
+                      #other-05.tab-content-ats-det-ht
+                        p
+                        | From Bangkok there are ordinary, 2nd class, and 1st class air-conditioned busses leaving throughout the day from Bangkok's Northern Bus Terminal (Mo Chit 2) for Chiang Mai (8.00 a.m. to 09.00 p.m.) Call 02 936 3600, 02 936 2852, and 02 937 8055 for an updated bus timetable.
+          .blue_wave
+          .grey_wave_bottom 
+        .block-06-ats-det
+          .containers
+            img.Layer-533(src="../src/images/img/map-des-02.jpg")
+            .style-view 
+              i.fa.fa-map-marker
+              | Go to google map
+        .block-07-ats-det
+          .containers
+            .style-head-send SUBMIT INQUIRIES AND REQUEST FOR MORE INFORMATION
+            .content-body
+              .form-group
+                .row
+                  .col-12.col-sm-3.col-md-3.col-lg-3.col-xl-3.left NAME :
+                  .col-12.col-sm-9.col-md-8.col-lg-7.col-xl-6.right
+                    input.input-text(placeholder="Name")
+                    .style-text-please  * Please fill your name
+              .form-group
+                .row
+                  .col-12.col-sm-3.col-md-3.col-lg-3.col-xl-3.left EMAIL :
+                  .col-12.col-sm-9.col-md-8.col-lg-7.col-xl-6.right
+                    input.input-text(placeholder="Email")
+              .form-group
+                .row
+                  .col-12.col-sm-3.col-md-3.col-lg-3.col-xl-3.left COUNTRY :
+                  .col-12.col-sm-9.col-md-8.col-lg-7.col-xl-6.right
+                    select.input-text 
+                      option Please Select
+              .form-group
+                .row
+                  .col-12.col-sm-3.col-md-3.col-lg-3.col-xl-3.left MESSAGE :
+                  .col-12.col-sm-9.col-md-8.col-lg-7.col-xl-6.right
+                    textarea(rows="5" placeholder="Message")
+              .form-group.form-check
+                .row
+                  .col-sm-3.col-md-3.col-lg-3.col-xl-3
+                  .col-sm-9.col-12.col-md-7.col-lg-7.col-xl-6
+                    .check-robot 
+              .form-group.style-check
+                .row
+                  .col-sm-3.col-md-3.col-lg-3.col-xl-3
+                  .col-12.col-sm-9.col-md-7.col-lg-7.col-xl-6
+                    input#exampleCheck1.form-check-input(type='checkbox')
+                    label.form-check-label(for='exampleCheck1') square  Send me a copy of this message
+              .form-group.height-btn
+                .row
+                  .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
+                    center
+                      button.btn-submit-send submit
+    //footer
+    include _components/footer.pug
+
+    // Optional JavaScript
+    script(type='text/javascript', src="../src/js/script.js")  
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/jquery-3.3.1.slim.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/popper.min.js")
+    script(type='text/javascript', src="../src/assets/vendor/bootstrap-4.1.0-dist/js/bootstrap.min.js")  
+
+    // Option Select Tab
+    script.
+      $(function() {
+        var $tabButtonItem = $('#tab-button-ats-det li'),
+          $tabSelect = $('#tab-select-ats-det'),
+          $tabContents = $('.tab-content-ats-det'),
+          activeClass = 'is-active';
+          $tabButtonItem.first().addClass(activeClass);
+          $tabContents.not(':first').hide();
+          $tabButtonItem.find('a').on('click', function(e) {
+        var target = $(this).attr('href');
+          $tabButtonItem.removeClass(activeClass);
+          $(this).parent().addClass(activeClass);
+          $tabSelect.val(target);
+          $tabContents.hide();
+          $(target).show();
+          e.preventDefault();
+          });
+        $tabSelect.on('change', function() {
+        var target = $(this).val(),
+          targetSelectNum = $(this).prop('selectedIndex');
+          $tabButtonItem.removeClass(activeClass);
+          $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+          $tabContents.hide();
+          $(target).show();
+          });
+          });
+    script.
+      $(function() {
+        var $tabButtonItem = $('#tab-button-ats-det-ht li'),
+          $tabSelect = $('#tab-select-ats-det-ht'),
+          $tabContents = $('.tab-content-ats-det-ht'),
+          activeClass = 'is-active';
+          $tabButtonItem.first().addClass(activeClass);
+          $tabContents.not(':first').hide();
+          $tabButtonItem.find('a').on('click', function(e) {
+        var target = $(this).attr('href');
+          $tabButtonItem.removeClass(activeClass);
+          $(this).parent().addClass(activeClass);
+          $tabSelect.val(target);
+          $tabContents.hide();
+          $(target).show();
+          e.preventDefault();
+          });
+        $tabSelect.on('change', function() {
+        var target = $(this).val(),
+          targetSelectNum = $(this).prop('selectedIndex');
+          $tabButtonItem.removeClass(activeClass);
+          $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+          $tabContents.hide();
+          $(target).show();
+          });
+          });
+
+
+

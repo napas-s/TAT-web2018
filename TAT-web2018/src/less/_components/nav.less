@@ -1,0 +1,190 @@
+.block-navigate{
+    .navbar{
+        border-bottom: 1px solid @slightly-desaturated-orange;
+        .navbar-brand{
+            .LOGO {
+                object-fit: contain;
+                height: auto;
+                width: 70px;
+                @media only screen and (min-width: @screen-xs) {width: 80px;}
+                @media only screen and (min-width: @screen-sm) {width: 90px;}
+                @media only screen and (min-width: @screen-md) {width: 100px;}
+                @media only screen and (min-width: @screen-lg) {width: 115px;}
+                @media only screen and (min-width: @screen-xl) {width: 115px;}
+            }
+        }
+        .navbar-toggler{
+            mix-blend-mode: undefined;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: @milk-chocolate;
+            font-size: 12px;
+            @media only screen and (min-width: @screen-xs) {font-size: 14px;}
+            @media only screen and (min-width: @screen-sm) {font-size: 14px;}
+            @media only screen and (min-width: @screen-md) {font-size: 14px;}
+            @media only screen and (min-width: @screen-lg) {font-size: 14px;}
+            @media only screen and (min-width: @screen-xl) {font-size: 14px;}
+        }
+        .navbar-collapse{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background-color: white;
+            top:0px;
+            left: 0;
+            position:fixed;
+            transition: 0s;
+            @media only screen and (min-width: @screen-lg) {
+                margin: unset;
+                padding: unset;
+                height: unset;
+                z-index: unset;
+                background-color: unset;
+                top: unset;
+                left: unset;
+                position:unset;
+            }
+            @media only screen and (min-width: @screen-xl) {
+                margin: unset;
+                padding: unset;
+                height: unset;
+                z-index: unset;
+                background-color: unset;
+                top: unset;
+                left: unset;
+                position:unset;
+            }
+            .toggler-close{
+                cursor: pointer;
+                display: unset;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 0.2px;
+                text-align: left;
+                color: @milk-chocolate;
+                top: 50px;
+                margin-top: 50px;
+                padding-top: 50px;
+                margin-left: 20px;
+                font-size: 14px;
+                @media only screen and (min-width: @screen-lg) {display: none;}
+                @media only screen and (min-width: @screen-xl) {display: none;}
+                a{
+                    &:hover{color: @dark-red;}
+                }
+            }
+            .header{
+                margin-top: 40px;
+                right: 0;
+                top:0;
+                z-index: 0;
+                position: absolute;
+                @media only screen and (min-width: @screen-lg) {top: 0; z-index: 999; margin-top: unset;}
+                @media only screen and (min-width: @screen-xl) {top: 0; z-index: 999; margin-top: unset;}
+                .nav-item{
+                    width: 100%;
+                    right: 0;
+                    top:0;
+                    @media only screen and (min-width: @screen-lg) {width: unset;}
+                    @media only screen and (min-width: @screen-xl) {width: unset;}
+                    .nav-link{
+                        right:0;
+                        text-align: right;
+                        mix-blend-mode: undefined;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.2px;
+                        text-align: right;
+                        color: @very-dark-gray;
+                        font-size: 12px;
+                    }
+                    .active {font-weight: bold;color: @dark-red;}
+                }
+                .dropdown{
+                    i{
+                        margin-left: 5px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: @sepia;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .navbar-nav{
+                margin-top: 100px;
+                @media only screen and (min-width: @screen-xs) {margin-top: 90px;}
+                @media only screen and (min-width: @screen-sm) {margin-top: 100px;}
+                @media only screen and (min-width: @screen-md) {margin-top: 100px;}
+                @media only screen and (min-width: @screen-lg) {margin-top: 30px;}
+                @media only screen and (min-width: @screen-xl) {margin-top: 30px;}
+                .nav-item{
+                    a{
+                        &:hover{color: @dark-red;}
+                    }
+                    .nav-link {
+                        width: 100%;
+                        mix-blend-mode: undefined;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: @milk-chocolate;
+                        font-size: 14px;
+                        @media only screen and (min-width: @screen-lg) {font-size: 13px;}
+                        @media only screen and (min-width: 1010px)     {font-size: 14px;}
+                        i{
+                            margin-right: 10px;
+                            mix-blend-mode: undefined;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: normal;
+                            letter-spacing: 0.4px;
+                            text-align: center;
+                            color: @milk-chocolate;
+                            font-size: 18px;
+                            @media only screen and (min-width: @screen-xs) {font-size: 18px;}
+                            @media only screen and (min-width: @screen-sm) {font-size: 20px;}
+                            @media only screen and (min-width: @screen-md) {font-size: 22px;}
+                            @media only screen and (min-width: @screen-lg) {font-size: 20px;}
+                            @media only screen and (min-width: 1010px)     {font-size: 22px;}
+                            @media only screen and (min-width: @screen-xl) {font-size: 24px;}
+                        }
+                    }
+                    .active {
+                        font-weight: bold;
+                        color: @milk-chocolate;
+                        @media only screen and (min-width: @screen-lg) {color: @dark-red;}
+                        @media only screen and (min-width: @screen-xl) {color: @dark-red;}
+                    }
+                    .beeline {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 1px;
+                        height: 100%;
+                        mix-blend-mode: undefined;
+                        background-color: @very-dark-gray ;
+                    }
+                }
+            }
+        }
+    }
+}
